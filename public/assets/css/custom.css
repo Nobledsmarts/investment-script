@@ -1,0 +1,67 @@
+.dropdown-menu li:not(li:last-of-type) {
+    border-bottom: 1px solid #0b0c2133;
+}
+.dropdown-menu li:hover{
+    background: #0b0c21a8;
+}
+.dropdown-menu li:hover a{
+    color: #fdfdff;
+}
+.wysihtml5-sandbox{
+    width: 100% !important;
+}
+
+/* 90, 0, 21 */
+/* #01000e */
+.blocker{
+    z-index: 1999;
+}
+.modal{
+    overflow: initial;
+    padding: 30px;
+}
+.modal a.close-modal[class*="icon-"] {
+    top: -10px;
+    right: -10px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    color: #fff;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    background: #da2020;
+    font-size: x-large;
+    border: 2px solid #fff;
+    -webkit-border-radius:  26px;
+    -moz-border-radius:     26px;
+    -o-border-radius:       26px;
+    -ms-border-radius:      26px;
+    -moz-box-shadow:    1px 1px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    box-shadow:         1px 1px 5px rgba(0,0,0,0.5);
+  }
+  .current-progressbar .progress-bar{
+      overflow-wrap: normal;
+  }
+  nav.navbar .fa{
+      font-size: 1.5em !important;
+  }
+  
+  input[type="search"] {
+      color: #000;
+  }
+  .select2.select2-container{
+      width : 100% !important;
+  }
+  .select2-container--default .select2-selection--single{
+      background-color: #070713 !important;
+      height: calc(2.25rem + 2px) !important;
+    color: #fff;
+    border: 1px solid rgba(120, 130, 140, 0.13) !important;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
