@@ -198,7 +198,7 @@
                                         }
                                         </script>
                                         <script type="text/javascript"
-                                            src="translate.google.com/translate_a/f78767876.txt?cb=googleTranslateElementInit2">
+                                            src="{{ asset('visitor/translate.google.com/translate_a/f78767876.txt?cb=googleTranslateElementInit2') }}">
                                         </script>
 
 
