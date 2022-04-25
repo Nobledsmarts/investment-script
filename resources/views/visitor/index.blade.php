@@ -1,4 +1,5 @@
-        @include('visitor.index.header')
+    @include('visitor.layouts.head')
+        @include('visitor.layouts.header')
             <main>
                 
                 <div id="slider" class="inspiro-slider dots-creative" data-height-xs="560">
@@ -639,11 +640,11 @@
                 </div>
 
                 <section style="height: 80vh_; min-height: 400px; object-fit: cover;"
-                class="section-video text-light d-flex-center" data-bg-video="{{ asset('visitor/site-images/vid.mp4">
+                class="section-video text-light d-flex-center" data-bg-video="{{ asset('visitor/site-images/vid.mp4') }}">
                     <div class="html5vid video-loaded" id="video-rpptn">
                         <video playsinline="" style="object-fit: cover;"
                         autoplay loop muted="true" poster="{{ asset('visitor/site-images/konsulting_bull_reverse.jpg') }}" preload="auto">
-                            <source src="{{ asset('visitor/site-images/bg-chc.mp4" type="video/mp4">
+                            <source src="{{ asset('visitor/site-images/bg-chc.mp4') }}" type="video/mp4">
                         </video>
                     </div>
                     <div class="bg-overlay yuwjw7jjjk" style="opacity: .5 !important; background-color: #112b77 !important;">
@@ -1011,4 +1012,4 @@
                     </div>
                 </section>
             </main>         
-        @include('visitor.index.footer')
+        @include('visitor.layouts.footer')
