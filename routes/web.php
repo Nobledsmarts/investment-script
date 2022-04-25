@@ -22,6 +22,7 @@ Route::get('/news', [App\Http\Controllers\HomeController::class, 'news']);
 Route::get('/support', [App\Http\Controllers\HomeController::class, 'support']);
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs']);
 Route::get('/affiliate', [App\Http\Controllers\HomeController::class, 'affiliate']);
+Route::get('/cryptocurrency-investments', [App\Http\Controllers\HomeController::class, 'cryptocurrencyInvestments']);
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs']);
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy']);
 Route::get('/meet-our-traders', [App\Http\Controllers\HomeController::class, 'meetOurTraders']);
