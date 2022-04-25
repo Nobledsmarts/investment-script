@@ -9,7 +9,7 @@
                         <div class="container">
                             <div class="slide-captions text-center">
 
-                                <h1 data-caption-animation="zoom-out" class="slider-header white slider_item_main1">{{ env('SITE_NAME_SHORT') }} Investment Funds Investments</h1>
+                                <h1 data-caption-animation="zoom-out" class="slider-header white slider_item_main1">{{ env('SITE_NAME_SHORT') }} Investments</h1>
                                 <p class="lead slider_item_sub1">
                                     We pride ourselves in our guarantees, success and track record in the
                                     asset management and investments market. <br>
@@ -133,15 +133,15 @@
                                     </div>
                                     <div class="heading-text heading-line text-center">
                                         <p data-animate="zoomIn" style="color: #fff !important;"
-                                            class="animated zoomIn visible">{{ env('SITE_NAME_SHORT') }} Investment Funds</p>
+                                            class="animated zoomIn visible">{{ env('SITE_NAME_SHORT') }}</p>
                                     </div>
                                     <h2 class="uk-margin-small-top uk-margin-remove-bottom tup"
                                         style="font-size: 25px; color: #fff !important;">
-                                        {{ env('SITE_NAME_SHORT') }} Investment Funds helps you
+                                        {{ env('SITE_NAME_SHORT') }} helps you
                                         grow your money</h2>
                                     <p class="uk-margin-remove-top"
                                         style="max-width: 970px; margin: auto; color: #fff !important;">
-                                        {{ env('SITE_NAME_SHORT') }} Investment Funds, a pioneer of commisssion free investing, gives you access to
+                                        {{ env('SITE_NAME_SHORT') }}, a pioneer of commisssion free investing, gives you access to
                                         investing and
                                         more ways to make your money work harder for you.
 
@@ -166,19 +166,19 @@
                                     <h4 style="font-size: 20px" class="tup m-b-0">Lucrative Investment
                                         opportunity at your fingertips.</h4>
                                     <p style="font-size: 15px; font-weight: 400;">
-                                        {{ env('SITE_NAME_SHORT') }} Investment Funds is dedicated to helping investors around the world reach
+                                        {{ env('SITE_NAME_SHORT') }} is dedicated to helping investors around the world reach
                                         their desired investment goals and broaden their financial horizons.
                                         <br>
                                         We provide investment products and solutions to our clients across the world. Our
                                         breadth of investment capabilities is extensive and among the most innovative within the
                                         market.
                                         <br><br>
-                                        {{ env('SITE_NAME_SHORT') }} Investment Funds was founded on a simple but revolutionary idea that an
+                                        {{ env('SITE_NAME_SHORT') }} was founded on a simple but revolutionary idea that an
                                         investment company
-                                        should be run for the sole benefit of its investors. And so {{ env('SITE_NAME_SHORT') }} Investment Funds was
+                                        should be run for the sole benefit of its investors. And so {{ env('SITE_NAME_SHORT') }} was
                                         designed to be
                                         different, removing outside owners and outside interests from the equation. Because of
-                                        our investor-owned structure, {{ env('SITE_NAME_SHORT') }} Investment Funds's success can only be measured by
+                                        our investor-owned structure, {{ env('SITE_NAME_SHORT') }}'s success can only be measured by
                                         your success.
                                     </p>
                                 </div>
@@ -409,7 +409,7 @@
                                         <h2><a target="_blank" href="/pamm-and-mam-account">PAMM AND MAMM FOREX INVESTMENT
                                                 package</a>
                                         </h2>
-                                        <p>{{ env('SITE_NAME_SHORT') }} Investment Funds PAMM Managers trade using invested capital of
+                                        <p>{{ env('SITE_NAME_SHORT') }} PAMM Managers trade using invested capital of
                                             investors in this investment package. Any profits and losses generated
                                             will be shared between all accounts that are invested in the PAMM
                                             Manager on a proportional basis.</p>
@@ -480,7 +480,7 @@
                             <div class="col-lg-12" style="padding-bottom: 30px;">
 
                                 <h2 style="font-size: 23px; margin-bottom: 0; color: #fff !important;" class="tup text-center">
-                                    Note : {{ env('SITE_NAME_SHORT') }} INVESTMENT FUNDS  COMPANY tends to also deal with a VIP plan known as “FIXED FUNDS DEPOSIT “
+                                    Note : {{ env('SITE_NAME_SHORT') }}  COMPANY tends to also deal with a VIP plan known as “FIXED FUNDS DEPOSIT “
                                 </h2>
                             </div>
                             <div class="col-lg-6 m-b-30" data-animate="fadeInLeft">
@@ -503,10 +503,10 @@
 
                             <div class="col-lg-6 p-l-40 p-r-40" data-animate="fadeInRight">
                                 <h2 style="font-size: 23px; margin-bottom: 0; color: #fff !important;" class="tup text-center">
-                                    LOAN OFFER WITH {{ env('SITE_NAME_SHORT') }} INVESTMENT FUNDS FUNDS COMPANY 
+                                    LOAN OFFER WITH {{ env('SITE_NAME_SHORT') }} FUNDS COMPANY 
                                 </h2>
                                 <div class="m-b-40 f15">
-                                    <p style="color: #fff !important">We offer our investors access to high-growth In terms of Loan offer from the company, {{ env('SITE_NAME_SHORT') }} INVESTMENT FUNDS COMPANY grants this offer from two(2) ways “ The Semi-Annual Offer” and “ The Annual Offer “...</p>
+                                    <p style="color: #fff !important">We offer our investors access to high-growth In terms of Loan offer from the company, {{ env('SITE_NAME_SHORT') }} COMPANY grants this offer from two(2) ways “ The Semi-Annual Offer” and “ The Annual Offer “...</p>
                                     <p style="color: #fff !important"> You are only eligible to apply for loan from the company only when you must have been an active investor with at least two(2) active referrals under your name, and this two referred must have invested respectively in accordance with the company.</p>
 
                                     
@@ -581,7 +581,7 @@
                                         implementation of industry standard cryptocurrency trading strategies.</p>
                                     <p style="color: #fff !important"> We’re proud to be an asset management company whose
                                         culture is driven by strong values
-                                        and a long-term vision. At {{ env('SITE_NAME_SHORT') }} Investment Funds Investments, our vision, mission and
+                                        and a long-term vision. At {{ env('SITE_NAME_SHORT') }} Investments, our vision, mission and
                                         core values serve as the catalyst in our relations with our clients, employees,
                                         shareholders and in the communities in which we live and work. They are our guiding
                                         compass in our business each day.</p>
@@ -652,7 +652,7 @@
                     <div class="container container-fullscreen">
                         <div class="text-middle text-center text-light">
                             <h1 class="text-uppercase text-lg headng_stef d-font-exempt"
-                                style=" font-size: 26px !important; margin-bottom: 0; color: #fff !important">{{ env('SITE_NAME_SHORT') }} Investment Funds                        INVESTMENTS
+                                style=" font-size: 26px !important; margin-bottom: 0; color: #fff !important">{{ env('SITE_NAME_SHORT') }}                        INVESTMENTS
                             </h1>
                             <p class="lead">
                                 <span style="font-size: 20px; font-weight: bold; text-transform: uppercase !important;">The Revolution In asset investments Management <br>
@@ -685,7 +685,7 @@
                                     <h2 class="uk-margin-small-bottom uk-margin-remove-top uk-text-center c-w"
                                         style="color: #fff !important;">Earn more - invest tax-free</h2>
                                     <p class="uk-margin-remove-top uk-text-lead uk-text-center c-w">The Government lets you
-                                        invest up to £20,000 each year tax-free in an ISA. You can 'wrap' any {{ env('SITE_NAME_SHORT') }} Investment Funds                                investment in an ISA, so that you don't pay tax on the interest you earn, and you can
+                                        invest up to £20,000 each year tax-free in an ISA. You can 'wrap' any {{ env('SITE_NAME_SHORT') }}                                investment in an ISA, so that you don't pay tax on the interest you earn, and you can
                                         transfer in any other ISAs you have and invest those too.
 
                                         <span class="uk-text-bold">For investors in the United Kingdom (UK) only.</span>
@@ -772,7 +772,7 @@
                                     <div class="testimonial-item">
                                         <img src="{{ asset('visitor/img/reviewer2.jpg') }}" alt="">
                                         <p>I've had incredible customer service since i started investing here, I'm a repeat
-                                            investor. I've been investng with {{ env('SITE_NAME_SHORT') }} Investment Funds. Investments for nearly 3
+                                            investor. I've been investng with {{ env('SITE_NAME_SHORT') }}. Investments for nearly 3
                                             years
                                             now and i've loved every bit of the experience so far.</p>
                                         <span>Ron DiCicco</span>
@@ -783,7 +783,7 @@
                                     <div class="testimonial-item">
                                         <img src="{{ asset('visitor/img/reviewer3.jpg') }}" alt="">
                                         <p>Transparent, profitable, and reliable bitcoin investment company that will make you
-                                            real money. Thanks to all of you at {{ env('SITE_NAME_SHORT') }} Investment Funds for the excellent
+                                            real money. Thanks to all of you at {{ env('SITE_NAME_SHORT') }} for the excellent
                                             service. </p>
                                         <span>Diane Podmanik</span>
                                         <span>Budapest, Hungary</span>
@@ -793,7 +793,7 @@
                                     <div class="testimonial-item">
                                         <img src="{{ asset('visitor/img/reviewer5.jpg') }}" alt="">
                                         <p>I have always been searching for an opportunity to earn on bitcoin and finally I
-                                            found {{ env('SITE_NAME_SHORT') }} Investment Funds and they have proven to be very reliable since
+                                            found {{ env('SITE_NAME_SHORT') }} and they have proven to be very reliable since
                                             i've been investing with them.</p>
                                         <span>Joe Tantillo</span>
                                         <span>Prague, Czech Republic</span>
@@ -942,7 +942,7 @@
                                     <div class="uk-first-column ujwsu8k_stef37hjh">
                                         <img class="uk-margin-remove-bottom" style="width: 200px" src="{{ asset('visitor/img/undraw_safe_bnk7.svg') }}"
                                             alt="wave-icon" width="64">
-                                        <h3 class="uk-margin-small-top tup" style="font-size: 23px">{{ env('SITE_NAME_SHORT') }} Investment Funds is
+                                        <h3 class="uk-margin-small-top tup" style="font-size: 23px">{{ env('SITE_NAME_SHORT') }} is
                                             secured
                                         </h3>
                                         <p>Guaranteed protection. When we say that you are secured we really mean it. We have
