@@ -3,7 +3,7 @@
                 
                 <div id="slider" class="inspiro-slider dots-creative" data-height-xs="560">
 
-                    <div class="slide kenburns" data-bg-image="./site-images/image-8.jpg">
+                    <div class="slide kenburns" data-bg-image="{{ asset('visitor/site-images/image-8.jpg') }}">
                         <div class="bg-overlay" style="background: #062f6d !important;"></div>
                         <div class="container">
                             <div class="slide-captions text-center">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
 
-                    <div class="slide kenburns" data-bg-image="site-images/stock-trader-810.jpg">
+                    <div class="slide kenburns" data-bg-image="{{ asset('visitor/site-images/stock-trader-810.jpg') }}">
                         <div class="bg-overlay"></div>
                         <div class="container">
                             <div class="slide-captions text-center">
@@ -45,7 +45,7 @@
                     </div>
 
 
-                    <div class="slide kenburns" data-bg-image="site-images/trading-desk-1536x1024.jpg">
+                    <div class="slide kenburns" data-bg-image="{{ asset('visitor/site-images/trading-desk-1536x1024.jpg') }}">
                         <div class="bg-overlay"></div>
                         <div class="container">
                             <div class="slide-captions text-center">
@@ -185,7 +185,7 @@
 
                             <div class="col-lg-6">
                                 <img alt="" style="width: 100% !important"
-                                    src="site-images/compressed-assets/image-0-compressed.jpg">
+                                    src="{{ asset('visitor/site-images/compressed-assets/image-0-compressed.jpg') }}">
                             </div>
                         </div>
 
@@ -198,23 +198,23 @@
                                     <div class="uk-grid-medium uk-child-width-1-4@s uk-child-width-1-5@m uk-text-center in-client-logo-3 uk-grid"
                                         data-uk-grid="">
                                         <div class="uk-tile uk-tile-default uk-first-column">
-                                            <img class="uk-margin-remove" src="img/in-wave-media-1.svg" alt="client-logo"
+                                            <img class="uk-margin-remove" src="{{ asset('visitor/img/in-wave-media-1.svg') }}" alt="client-logo"
                                                 width="147" height="42">
                                         </div>
                                         <div class="uk-tile uk-tile-default">
-                                            <img class="uk-margin-remove" src="img/in-wave-media-2.svg" alt="client-logo"
+                                            <img class="uk-margin-remove" src="{{ asset('visitor/img/in-wave-media-2.svg') }}" alt="client-logo"
                                                 width="147" height="42">
                                         </div>
                                         <div class="uk-tile uk-tile-default">
-                                            <img class="uk-margin-remove" src="img/in-wave-media-3.svg" alt="client-logo"
+                                            <img class="uk-margin-remove" src="{{ asset('visitor/img/in-wave-media-3.svg') }}" alt="client-logo"
                                                 width="147" height="42">
                                         </div>
                                         <div class="uk-tile uk-tile-default">
-                                            <img class="uk-margin-remove" src="img/in-wave-media-4.svg" alt="client-logo"
+                                            <img class="uk-margin-remove" src="{{ asset('visitor/img/in-wave-media-4.svg') }}" alt="client-logo"
                                                 width="147" height="42">
                                         </div>
                                         <div class="uk-tile uk-tile-default uk-visible@m">
-                                            <img class="uk-margin-remove" src="img/in-wave-media-5.svg" alt="client-logo"
+                                            <img class="uk-margin-remove" src="{{ asset('visitor/img/in-wave-media-5.svg') }}" alt="client-logo"
                                                 width="147" height="42">
                                         </div>
                                     </div>
@@ -333,10 +333,10 @@
                                     <div class="post-slider">
                                         <div class="carousel dots-inside arrows-visible arrows-only" data-items="1"
                                             data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="img/Investment-October.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/Investment-October.jpg"></a>
-                                            <a href="img/retire4.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/retire4.jpg"></a>
+                                            <a href="{{ asset('visitor/img/Investment-October.jpg') }}" data-lightbox="gallery-image">
+                                                <img alt="" src="{{ asset('visitor/img/Investment-October.jpg') }}"></a>
+                                            <a href="{{ asset('visitor/img/retire4.jpg') }}" data-lightbox="gallery-image">
+                                                <img alt="" src="{{ asset('visitor/img/retire4.jpg') }}"></a>
                                         </div>
                                         <span class="post-meta-category"><a href="/retirement-and-pension"
                                                 target="_blank">Retirement and Pension
@@ -360,12 +360,12 @@
                                     <div class="post-slider">
                                         <div class="carousel dots-inside arrows-visible arrows-only" data-items="1"
                                             data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="img/yuuyuu.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/yuuyuu.jpg"></a>
-                                            <a href="img/ttyuuik.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/ttyuuik.jpg"></a>
-                                            <a href="img/ttyu.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/ttyu.jpg"></a>
+                                            <a href="{{ asset('visitor/img/yuuyuu.jpg') }}" data-lightbox="gallery-image">
+                                                <img alt="" src="{{ asset('visitor/img/yuuyuu.jpg') }}"></a>
+                                            <a href="{{ asset('visitor/img/ttyuuik.jpg') }}" data-lightbox="gallery-image">
+                                                <img alt="" src="{{ asset('visitor/img/ttyuuik.jpg') }}"></a>
+                                            <a href="{{ asset('visitor/img/ttyu.jpg') }}" data-lightbox="gallery-image">
+                                                <img alt="" src="{{ asset('visitor/img/ttyu.jpg') }}"></a>
                                         </div>
                                         <span class="post-meta-category"><a target="_blank"
                                                 href="/cryptocurrency-investments">CRYPTOCURRENCY</a></span>
@@ -386,51 +386,18 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-slider">
-                                        <div class="carousel dots-inside arrows-visible arrows-only" data-items="1"
-                                            data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="img/real-est.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/real-est.jpg"></a>
-                                            <a href="img/img2.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/img2.jpg"></a>
-                                            <a href="img/real-estate-coins-stacked-arrow-up-great-investment-2136x1427.jpg"
-                                                data-lightbox="gallery-image">
-                                                <img alt=""
-                                                    src="img/real-estate-coins-stacked-arrow-up-great-investment-2136x1427.jpg"></a>
-                                        </div>
-                                        <span class="post-meta-category"><a target="_blank" href="property-investment.php">Real
-                                                Estate
-                                                (Property)</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <h2><a target="_blank" href="property-investment.php">Real Estate (Property) INVESTMENT
-                                                package</a></h2>
-                                        <p>Real
-                                            estate investing has played a huge part in the success story of most
-                                            billionaires around
-                                            the world today. It’s a proven and tested way for all kinds of investors to get
-                                            ahead and reach
-                                            their financial and investment goals.</p>
-                                        <a href="property-investment.php" target="_blank" class="item-link">Learn More <i
-                                                class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div> -->
-
                             <div class="post-item border">
                                 <div class="post-item-wrap">
                                     <div class="post-slider">
                                         <div class="carousel dots-inside arrows-visible arrows-only" data-items="1"
                                             data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="img/1605-trading-750x500.jpg.webp" data-lightbox="gallery-image">
-                                                <img alt="" src="img/1605-trading-750x500.jpg.webp"></a>
+                                            <a href="{{ asset('visitor/img/1605-trading-750x500.jpg') }}.webp" data-lightbox="gallery-image">
+                                                <img alt="" src="{{ asset('visitor/img/1605-trading-750x500.jpg') }}.webp"></a>
                                             <a href="/pamm-and-mamm-account" data-lightbox="gallery-image">
-                                                <img alt="" src="img/pamm.jpg"></a>
-                                            <a href="img/stock-exchange-market-concept-businessman.jpg"
+                                                <img alt="" src="{{ asset('visitor/img/pamm.jpg') }}"></a>
+                                            <a href="{{ asset('visitor/img/stock-exchange-market-concept-businessman.jpg') }}"
                                                 data-lightbox="gallery-image">
-                                                <img alt="" src="img/stock-exchange-market-concept-businessman.jpg"></a>
+                                                <img alt="" src="{{ asset('visitor/img/stock-exchange-market-concept-businessman.jpg') }}"></a>
                                         </div>
                                         <span class="post-meta-category"><a target="_blank"
                                                 href="/pamm-and-mam-account">PAMM AND MAMM
@@ -450,79 +417,13 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                            <!-- <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-slider">
-                                        <div class="carousel dots-inside arrows-visible arrows-only" data-items="1"
-                                            data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="img/cannabis.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/cannabis.jpg"></a>
-                                            <a href="img/marijuana_stocks_8_stock_price-1024x667.jpg"
-                                                data-lightbox="gallery-image">
-                                                <img alt="" src="img/marijuana_stocks_8_stock_price-1024x667.jpg"></a>
-                                            <a href="img/marijuana-stocks-to-buy-now-1280x720.jpg"
-                                                data-lightbox="gallery-image">
-                                                <img alt="" src="img/marijuana-stocks-to-buy-now-1280x720.jpg"></a>
-                                            <a href="img/Cannabis-Oil-Lab-Petri-Dish.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/Cannabis-Oil-Lab-Petri-Dish.jpg"></a>
-                                        </div>
-                                        <span class="post-meta-category"><a target="_blank"
-                                                href="cannabis-investment-account.php">CANNABIS</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <h2><a target="_blank" href="cannabis-investment-account.php">CANNABIS INVESTMENT
-                                                package</a></h2>
-                                        <p> Whether you’re an experienced investor or just starting to develop a portfolio, the
-                                            good
-                                            news is
-                                            that {{ env('SITE_NAME_SHORT') }} Investment Funds has experinced stock traders who will help you in
-                                            trading Cannabis (Marijuana) stocks and make profits for you.</p>
-                                        <a target="_blank" href="cannabis-investment-account.php" class="item-link">Learn More
-                                            <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div> -->
-
-
-
-                            <!-- <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-slider">
-                                        <div class="carousel dots-inside arrows-visible arrows-only" data-items="1"
-                                            data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="img/couple-with-nfp-looking-contract-modern-house_69315-644.jpg"
-                                                data-lightbox="gallery-image">
-                                                <img alt=""
-                                                    src="img/couple-with-nfp-looking-contract-modern-house_69315-644.jpg"></a>
-                                            <a href="img/nfp-forex_1083278555.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="img/nfp-forex_1083278555.jpg"></a>
-                                        </div>
-                                        <span class="post-meta-category"><a target="_blank" href="nfp.php">Non-Farm Payroll
-                                                (NFP)</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <h2><a href="nfp.php" target="_blank">Non-Farm Payroll (NFP) INVESTMENT package</a>
-                                        </h2>
-                                        <p>Most times , we trade the
-                                            EUR/USD afterthought NFP report. The
-                                            EUR/USD is the most heavily traded NFP-backed currency pairs in the world.
-                                            Our technology balances and maintains the portfolio over
-                                            time so you don't have to.</p>
-                                        <a target="_blank" href="nfp.php" class="item-link">Learn More <i
-                                                class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div> -->
-
                         </div>
                     </div>
                 </div>
 
                 <div style="background-color: #01123c;"
                 class="uk-section uk-section-secondary uk-padding-large uk-background-contain uk-background-bottom-center in-padding-large-vertical@s in-profit-3"
-                data-src="img/in-section-profit-3.png" data-uk-img>
+                data-src="{{ asset('visitor/img/in-section-profit-3.png') }}" data-uk-img>
                     <div class="uk-container uk-margin-small-bottom">
                         <div class="uk-grid-large" data-uk-grid>
                             <div class="uk-width-1-1@m">
@@ -636,39 +537,39 @@
                             </div>
                             <div class="col-lg-6 m-b-30" data-animate="fadeInLeft">
                                 <div class="carousel yuwnk7826stef" data-items="1">
-                                    <a target="_blank" href="images/certificate.png"
+                                    <a target="_blank" href="{{ asset('visitor/images/certificate.png') }}"
                                         data-lightbox="gallery-image" title="Your image title here!"><img
-                                            src="images/certificate.png" alt=""></a>
+                                            src="{{ asset('visitor/images/certificate.png') }}" alt=""></a>
 
-                                    <a target="_blank" href="site-images/compressed-assets/image-0-compressed.jpg"
+                                    <a target="_blank" href="{{ asset('visitor/site-images/compressed-assets/image-0-compressed.jpg') }}"
                                         data-lightbox="gallery-image" title="Your image title here!"><img
-                                            src="site-images/compressed-assets/image-0-compressed.jpg" alt=""></a>
+                                            src="{{ asset('visitor/site-images/compressed-assets/image-0-compressed.jpg') }}" alt=""></a>
 
-                                    <a target="_blank" href="site-images/BMO_CS_TradingFloor.jpg"
+                                    <a target="_blank" href="{{ asset('visitor/site-images/BMO_CS_TradingFloor.jpg') }}"
                                         data-lightbox="gallery-image" title="Your image title here!"><img
-                                            src="site-images/BMO_CS_TradingFloor.jpg" alt=""></a>
+                                            src="{{ asset('visitor/site-images/BMO_CS_TradingFloor.jpg') }}" alt=""></a>
 
-                                    <a target="_blank" href="site-images/compressed-assets/image-1-compressed.jpg"
+                                    <a target="_blank" href="{{ asset('visitor/site-images/compressed-assets/image-1-compressed.jpg') }}"
                                         data-lightbox="gallery-image" title="Your image title here!"><img
-                                            src="site-images/compressed-assets/image-1-compressed.jpg" alt=""></a>
+                                            src="{{ asset('visitor/site-images/compressed-assets/image-1-compressed.jpg') }}" alt=""></a>
 
-                                    <a target="_blank" href="site-images/WhatWeDoPeople2x.jpg" data-lightbox="gallery-image"
-                                        title="Your image title here!"><img src="site-images/WhatWeDoPeople2x.jpg" alt=""></a>
+                                    <a target="_blank" href="{{ asset('visitor/site-images/WhatWeDoPeople2x.jpg') }}" data-lightbox="gallery-image"
+                                        title="Your image title here!"><img src="{{ asset('visitor/site-images/WhatWeDoPeople2x.jpg') }}" alt=""></a>
 
-                                    <a target="_blank" href="site-images/compressed-assets/image-5-compressed.jpg"
+                                    <a target="_blank" href="{{ asset('visitor/site-images/compressed-assets/image-5-compressed.jpg') }}"
                                         data-lightbox="gallery-image" title="Your image title here!"><img
-                                            src="site-images/compressed-assets/image-5-compressed.jpg" alt=""></a>
+                                            src="{{ asset('visitor/site-images/compressed-assets/image-5-compressed.jpg') }}" alt=""></a>
 
 
-                                    <a target="_blank" href="site-images/team1.jpg" data-lightbox="gallery-image"
-                                        title="Your image title here!"><img src="site-images/team1.jpg" alt=""></a>
-                                    <a target="_blank" href="site-images/team2.jpg" data-lightbox="gallery-image"
-                                        title="Your image title here!"><img src="site-images/team2.jpg" alt=""></a>
-                                    <a target="_blank" href="site-images/team3.jpg" data-lightbox="gallery-image"
-                                        title="Your image title here!"><img src="site-images/team3.jpg" alt=""></a>
+                                    <a target="_blank" href="{{ asset('visitor/site-images/team1.jpg') }}" data-lightbox="gallery-image"
+                                        title="Your image title here!"><img src="{{ asset('visitor/site-images/team1.jpg') }}" alt=""></a>
+                                    <a target="_blank" href="{{ asset('visitor/site-images/team2.jpg') }}" data-lightbox="gallery-image"
+                                        title="Your image title here!"><img src="{{ asset('visitor/site-images/team2.jpg') }}" alt=""></a>
+                                    <a target="_blank" href="{{ asset('visitor/site-images/team3.jpg') }}" data-lightbox="gallery-image"
+                                        title="Your image title here!"><img src="{{ asset('visitor/site-images/team3.jpg') }}" alt=""></a>
 
-                                    <a target="_blank" href="site-images/stock-trading.jpg" data-lightbox="gallery-image"
-                                        title="Your image title here!"><img src="site-images/stock-trading.jpg" alt=""></a>
+                                    <a target="_blank" href="{{ asset('visitor/site-images/stock-trading.jpg') }}" data-lightbox="gallery-image"
+                                        title="Your image title here!"><img src="{{ asset('visitor/site-images/stock-trading.jpg') }}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 p-l-40 p-r-40" data-animate="fadeInRight">
@@ -729,7 +630,7 @@
                                         </div>
                                     </div>
                                     <div class="uk-visible@m"> <img class="in-top-offset-50 uk-align-right"
-                                            src="img/monee-content-platform2.png" data-src="img/monee-content-platform2.png"
+                                            src="{{ asset('visitor/img/monee-content-platform2.png') }}" data-src="{{ asset('visitor/img/monee-content-platform2.png') }}"
                                             alt="monee-platform" width="350" height="258" data-uk-img=""> </div>
                                 </div>
                             </div>
@@ -738,11 +639,11 @@
                 </div>
 
                 <section style="height: 80vh_; min-height: 400px; object-fit: cover;"
-                class="section-video text-light d-flex-center" data-bg-video="site-images/vid.mp4">
+                class="section-video text-light d-flex-center" data-bg-video="{{ asset('visitor/site-images/vid.mp4">
                     <div class="html5vid video-loaded" id="video-rpptn">
                         <video playsinline="" style="object-fit: cover;"
-                        autoplay loop muted="true" poster="site-images/konsulting_bull_reverse.jpg" preload="auto">
-                            <source src="site-images/bg-chc.mp4" type="video/mp4">
+                        autoplay loop muted="true" poster="{{ asset('visitor/site-images/konsulting_bull_reverse.jpg') }}" preload="auto">
+                            <source src="{{ asset('visitor/site-images/bg-chc.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="bg-overlay yuwjw7jjjk" style="opacity: .5 !important; background-color: #112b77 !important;">
@@ -868,7 +769,7 @@
                                     data-items="1" data-animate-in="fadeIn" data-animate-out="fadeOut" data-arrows="false">
 
                                     <div class="testimonial-item">
-                                        <img src="img/reviewer2.jpg" alt="">
+                                        <img src="{{ asset('visitor/img/reviewer2.jpg') }}" alt="">
                                         <p>I've had incredible customer service since i started investing here, I'm a repeat
                                             investor. I've been investng with {{ env('SITE_NAME_SHORT') }} Investment Funds. Investments for nearly 3
                                             years
@@ -879,7 +780,7 @@
 
 
                                     <div class="testimonial-item">
-                                        <img src="img/reviewer3.jpg" alt="">
+                                        <img src="{{ asset('visitor/img/reviewer3.jpg') }}" alt="">
                                         <p>Transparent, profitable, and reliable bitcoin investment company that will make you
                                             real money. Thanks to all of you at {{ env('SITE_NAME_SHORT') }} Investment Funds for the excellent
                                             service. </p>
@@ -889,7 +790,7 @@
 
 
                                     <div class="testimonial-item">
-                                        <img src="img/reviewer5.jpg" alt="">
+                                        <img src="{{ asset('visitor/img/reviewer5.jpg') }}" alt="">
                                         <p>I have always been searching for an opportunity to earn on bitcoin and finally I
                                             found {{ env('SITE_NAME_SHORT') }} Investment Funds and they have proven to be very reliable since
                                             i've been investing with them.</p>
@@ -909,7 +810,7 @@
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <div class="uk-card uk-card-primary uk-border-rounded uk-background-cover"
-                                    style="background-image: linear-gradient(#012c6d80, #012c6da3),url(site-images/WhatWeDoPeople2x.jpg);">
+                                    style="background-image: linear-gradient(#012c6d80, #012c6da3),url({{ asset('visitor/site-images/WhatWeDoPeople2x.jpg') }});">
                                     <div class="uk-card-body">
                                         <h2 class="uk-margin-remove-bottom c-w" style="color: #fff !important">Built for you
                                         </h2>
@@ -947,35 +848,35 @@
                             <div class="col-lg-8">
                                 <div class="carousel dots-grey tyu6ytyujh" data-items="4" data-arrows="false">
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/coinone-1.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/coinone-1.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/plasmapay-1.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/plasmapay-1.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/bbva-2019.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/bbva-2019.svg') }}"></a>
                                     </div>
                                     <div>
                                         <a href="#"><img alt=""
-                                                src="site-images/logos/montex-network-cryptocurrency-connecting.svg"></a>
+                                                src="{{ asset('visitor/site-images/logos/montex-network-cryptocurrency-connecting.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/zcash.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/zcash.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/the-blockchain-group-tbg.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/the-blockchain-group-tbg.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/waves-6.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/waves-6.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/keep-solutions.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/keep-solutions.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/huobi-1.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/huobi-1.svg') }}"></a>
                                     </div>
                                     <div>
-                                        <a href="#"><img alt="" src="site-images/logos/ledger-new-logo-.svg"></a>
+                                        <a href="#"><img alt="" src="{{ asset('visitor/site-images/logos/ledger-new-logo-.svg') }}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -996,8 +897,7 @@
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <div class="uk-card uk-card-secondary uk-background-center-right uk-background-contain uk-background-image@m"
-                                    style="background-image: url(site-images/compressed-assets/image-1-compressed.jpg); background-size: 30%; height: 380px">
-                                    <!-- img/monee-content-image7.jpg -->
+                                    style="background-image: url({{ asset('visitor/site-images/compressed-assets/image-1-compressed.jpg') }}); background-size: 30%; height: 380px">
                                     <div class="uk-card-body">
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2@m uk-margin-small-left">
@@ -1028,7 +928,7 @@
 
                 <div data-animate="fadeIn"
                 class="uk-section uk-section-muted uk-padding-large uk-background-cover uk-background-center-center"
-                style="background-image: url(img/in-wave-background-3.jpg);">
+                style="background-image: url({{ asset('visitor/img/in-wave-background-3.jpg') }});">
                     <div class="uk-container in-wave-7">
                         <div class="uk-grid uk-flex uk-flex-center">
                             <div class="uk-width-3-4@m">
@@ -1039,7 +939,7 @@
                                     data-uk-grid="">
 
                                     <div class="uk-first-column ujwsu8k_stef37hjh">
-                                        <img class="uk-margin-remove-bottom" style="width: 200px" src="img/undraw_safe_bnk7.svg"
+                                        <img class="uk-margin-remove-bottom" style="width: 200px" src="{{ asset('visitor/img/undraw_safe_bnk7.svg') }}"
                                             alt="wave-icon" width="64">
                                         <h3 class="uk-margin-small-top tup" style="font-size: 23px">{{ env('SITE_NAME_SHORT') }} Investment Funds is
                                             secured
@@ -1051,7 +951,7 @@
 
                                     <div>
                                         <img class="uk-margin-remove-bottom" style="width: 200px"
-                                            src="img/undraw_business_deal_cpi9.svg" alt="wave-icon" width="64">
+                                            src="{{ asset('visitor/img/undraw_business_deal_cpi9.svg') }}" alt="wave-icon" width="64">
                                         <h3 class="uk-margin-small-top tup" style="font-size: 20px">Fully regulated &amp;
                                             invested funds are protected by insurance </h3>
                                         <p>Our company is fully regulated by the FCA and CySec and your funds are, additionally,
@@ -1072,7 +972,7 @@
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <div class="uk-card uk-card-default uk-background-center-right uk-background-contain uk-background-image@m"
-                                    style="background-image: url(img/in-cta-background.png);">
+                                    style="background-image: url({{ asset('visitor/img/in-cta-background.png') }});">
                                     <div class="uk-card-body">
                                         <div class="uk-grid uk-flex-middle" data-uk-grid="">
                                             <div class="uk-width-1-1 uk-width-expand@m uk-first-column">
@@ -1089,7 +989,7 @@
                     </div>
                 </div> <!-- section content end -->
 
-                <section class="fullscreen" data-bg-parallax="site-images/image-8.jpg">
+                <section class="fullscreen" data-bg-parallax="{{ asset('visitor/site-images/image-8.jpg') }}">
                     <div class="bg-overlay"></div>
                     <!-- <div class="shape-divider" data-style="20"></div> -->
                     <div class="container-wide">
