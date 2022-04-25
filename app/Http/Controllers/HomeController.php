@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Hash;
 class HomeController extends Controller {
     public function __construct() {
         SiteSettings::where('id', 1)->increment('visit_count', 1);
-        $this->middleware('login', ['except' => ['index', 'news', 'plans', 'login', 'support', 'register', 'faqs', 'terms', 'meetOurTraders', 'howItWorks', 'privacyPolicy', 'aboutUs', 'forgotPass', 'verifyToken', 'changePass', 'affiliate', 'cryptocurrencyInvestments', 'retirementAndPension']]);
+        $this->middleware('login', ['except' => ['index', 'news', 'plans', 'login', 'support', 'register', 'faqs', 'terms', 'meetOurTraders', 'howItWorks', 'privacyPolicy', 'aboutUs', 'forgotPass', 'verifyToken', 'changePass', 'affiliate', 'cryptocurrencyInvestments', 'retirementAndPension', 'pammAndMamAccount']]);
     }
     
     public function index(Request $request){
@@ -516,6 +516,12 @@ class HomeController extends Controller {
         $page_title = env('SITE_NAME') . " Investment Website | Retirement And Pension";
         $settings = SiteSettings::latest()->first();
         return view('visitor.retirement-and-pension', compact('page_title', 'settings'));
+    }
+
+    public function pammAndMamAccount(Request $request){
+        $page_title = env('SITE_NAME') . " Investment Website | Pamm And Mam Account";
+        $settings = SiteSettings::latest()->first();
+        return view('visitor.pamm-and-mam-account', compact('page_title', 'settings'));
     }
 
     public function affiliate(Request $request){

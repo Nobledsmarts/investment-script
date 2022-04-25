@@ -24,6 +24,7 @@ Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])
 Route::get('/affiliate', [App\Http\Controllers\HomeController::class, 'affiliate']);
 Route::get('/cryptocurrency-investments', [App\Http\Controllers\HomeController::class, 'cryptocurrencyInvestments']);
 Route::get('/retirement-and-pension', [App\Http\Controllers\HomeController::class, 'retirementAndPension']);
+Route::get('/pamm-and-mam-account', [App\Http\Controllers\HomeController::class, 'pammAndMamAccount']);
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs']);
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy']);
 Route::get('/meet-our-traders', [App\Http\Controllers\HomeController::class, 'meetOurTraders']);
