@@ -31,8 +31,8 @@
 
                         <div id="logo">
                             <a href="/">
-                                <span class="logo-default"><img src="site-images/site_logo/logo1/bg-rmv1.png" /></span>
-                                <span class="logo-dark"><img src="site-images/site_logo/bg-rmv.png" /></span>
+                                <span class="logo-default"><img src="{{ asset('visitor/site-images/site_logo/logo1/bg-rmv1.png') }}" /></span>
+                                <span class="logo-dark"><img src="{{ asset('visitor/site-images/site_logo/bg-rmv.png') }}" /></span>
                             </a>
                         </div>
 
@@ -94,7 +94,7 @@
                                             font-size: 16px;
                                             padding: 1px 0;
                                             background-repeat: no-repeat;
-                                            background-image: url(gtranslate.net/flags/16.png);
+                                            background-image: url(visitor/gtranslate.net/flags/16.png);
                                         }
 
                                         a.gflag img {
@@ -102,7 +102,7 @@
                                         }
 
                                         a.gflag:hover {
-                                            background-image: url(gtranslate.net/flags/16a.png);
+                                            background-image: url(visitor/gtranslate.net/flags/16a.png);
                                         }
 
                                         #goog-gt-tt {
