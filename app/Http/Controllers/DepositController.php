@@ -99,6 +99,8 @@ class DepositController extends Controller {
                 'duration' => $plan_name_is_valid->duration,
                 'wallet_address' => $wallet->currency_address,
                 'date' => date("Y-m-d H:i:s"),
+                'sign' => '+',
+                'color' => 'green',
                 'view' => 'emails.user.depositrequest',
                 'email' => $user->email
             ];
@@ -209,6 +211,8 @@ class DepositController extends Controller {
                     'duration' => $plan_details->duration,
                     'wallet_address' => $wallet->currency_address,
                     'date' => date("Y-m-d H:i:s"),
+                    'sign' => '+',
+                    'color' => 'green',
                     'view' => 'emails.user.reinvestmentrequest',
                     'email' => $user->email,
                 ];
@@ -350,6 +354,8 @@ class DepositController extends Controller {
                                 'amount_deposited' => $is_valid_deposit->amount,
                                 'bonus' => $referrer_bonus,
                                 'date' => date("Y-m-d H:i:s"),
+                                'sign' => '+',
+                                'color' => 'green',
                                 'view' => 'emails.user.referralbonus',
                                 'email' => $referrer_data->email
                             ];
@@ -373,6 +379,8 @@ class DepositController extends Controller {
                 'plan' => $is_valid_deposit->plan->name,
                 'reinvestment' => $is_valid_deposit->reinvestment,
                 'date' => date("Y-m-d H:i:s"),
+                'sign' => '+',
+                'color' => 'green',
                 'view' => 'emails.user.depositapproved',
                 'email' => $user->email,
                 'username' => $user->name
@@ -439,6 +447,8 @@ class DepositController extends Controller {
                 'reinvestment' => $is_valid_deposit->reinvestment,
                 'email' => $user->email,
                 'username' => $user->name,
+                'sign' => '::~',
+                'color' => 'red',
                 'view' => 'emails.user.depositdenied'
             ];
 
