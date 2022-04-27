@@ -20,8 +20,8 @@
          <td><table style="width:100%">
          <tbody><tr>
          <td width="30%" height="80" bgcolor="#000000" style="padding-left:20px;text-align:left">
-         <a href="https://www.silvercapitaltrade.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.silvercapitaltrade.com&amp;source=gmail&amp;ust=1629257826760000&amp;usg=AFQjCNGGgpz27o72cqhRKjzugomN6NYnUg">
-         <img src="{{ env("EMAIL_LOGO") }}" alt="silvercapitaltrade.com" border="0" style="display:block" class="CToWUd">
+         <a href="{{env('SITE_LINK')}}" target="_blank" data-saferedirecturl="https://www.google.com/url?q={{env('SITE_LINK')}}&amp;source=gmail&amp;ust=1629257826760000&amp;usg=AFQjCNGGgpz27o72cqhRKjzugomN6NYnUg">
+         <img src="{{ env("EMAIL_LOGO") }}" alt="{{env('SITE_NAME')}}" border="0" style="display:block" class="CToWUd">
          </a>
          </a>
          </td>
@@ -45,7 +45,7 @@
          <div style="padding:0 0 20px;font-size:22px;font-weight:bold;color:#e41824">
             {{ $details['subject'] }}
          </div>
-         <p><strong>SilverCapitalTrade</strong> Sent you a message.</p>
+         <p><strong>{{env('SITE_NAME')}}</strong> Sent you a message.</p>
         <p>
             
             {{  $details['message'] }}
@@ -67,7 +67,7 @@
          </tbody></table>
         </div>
         
-        <a href="https://www.silvercapitaltrade.com/login" style="color:#ffffff;text-decoration:none" target="_blank">
+        <a href="{{env('SITE_LINK')}}/login" style="color:#ffffff;text-decoration:none" target="_blank">
          <div align="center" style="width:400px;background-color:#d50002;border-radius:5px;text-align:center;padding:10px 20px;color:#ffffff;font-size:16px;font-weight:bold;margin:auto">
          LOGIN TO YOUR ACCOUNT </div>
         </a>
@@ -89,7 +89,7 @@
          </tbody></table>
         </div>
 
-        <a href="https://www.silvercapitaltrade.com/deposit" style="color:#ffffff;text-decoration:none" target="_blank">
+        <a href="{{env('SITE_LINK')}}/deposit" style="color:#ffffff;text-decoration:none" target="_blank">
             <div align="center" style="width:400px;background-color:#d50002;border-radius:5px;text-align:center;padding:10px 20px;color:#ffffff;font-size:16px;font-weight:bold;margin:auto">
             CREATE DEPOSIT REQUEST </div>
            </a>
@@ -109,7 +109,7 @@
          </tbody></table>
         </div>
 
-        <a href="https://www.silvercapitaltrade.com/withdraw" style="color:#ffffff;text-decoration:none" target="_blank">
+        <a href="{{env('SITE_LINK')}}/withdraw" style="color:#ffffff;text-decoration:none" target="_blank">
             <div align="center" style="width:400px;background-color:#d50002;border-radius:5px;text-align:center;padding:10px 20px;color:#ffffff;font-size:16px;font-weight:bold;margin:auto">
             CREATE WITHDRAWAL REQUEST </div>
            </a>
@@ -154,7 +154,7 @@
          <td width="590" bgcolor="#f5f5f5" align="left" style="font-family:Arial,Helvetica,sans-serif;color:#000000;font-size:14px;padding:25px 0" dir="ltr">
         <strong>© {{ date('Y') }} SCT. All rights reserved.</strong>
         <br><br>
-        <strong>Legal:</strong> SilverCapitalTrade Limited is authorised and regulated by the International Financial Services Commission (IFSC) (license number 000261/158).<br><br>
+        <strong>Legal:</strong> {{env('SITE_NAME')}} Limited is authorised and regulated by the International Financial Services Commission (IFSC) (license number 000261/158).<br><br>
          </td>
          <td width="30" bgcolor="#f5f5f5"></td>
          </tr>
@@ -167,6 +167,6 @@
         </tbody></table> </td>
          </tr>
         </tbody></table>
-        <img src="https://ci3.googleusercontent.com/proxy/NS_eWBZ38sib0l_KTTAE9qVYDWGZpXPm1nCg7IMmWKe3qxs_w87P0YEezrFM9gCs17ThY1gjnJ8dlm6UQEvqLP6W5w4PCdo2beyHoi3fOov9_AyBiRQB_heBf63MHLqD8u7OHP_4q4SaWm3tQVX3oWnJ2h9G80Jdo8Z94Lvs3zSjm_p-zh1y4KbXsv47SeFANQHLzE4GmZZNIMD6HH5joxerCnQ_Fkhj6htdFKhq78a0S15e7Gw92EcsIVmiyQsliFeIhSwQP8UnQsWFnrGAW7AoCTNz5Pa0_Z39c5i3-KoWGTgPKM8OJf3F0IUVEZGGpQyZ2jIJztWxzFhhv_yG8VpCQx-kznrJmSXXz75NJN7vVMfpFZ5VxnS31xczIgkZYmdin95MFYXYNFrtqimvS5it=s0-d-e1-ft#http://email.silvercapitaltrade.com/wf/open?upn=b5NRcAX-2BuEuTGJRk-2F9OpuKfrKYmj5hV-2Fn6N9joNM2c6Puv4hTm6b12dacE1iNBxY8nMVvxiEspeBYvqpAfz-2F2VK2mqxZkC8yXyp8IcNfpGOsVhlBTPFh8GG-2B6LM2Gn5EP8ZtWuDDZp89Ex-2FUufFBSS5XMLrJwn8U603mIsSjzDBe3wKbZfIbGH-2F85v3cbatkk-2Bu7N1VapN9ptW199LmQHBsQysn7Zlwc8cneGfGa9dQ-3D" alt="" width="1" height="1" border="0" style="height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important" class="CToWUd"></div>
+        <img src="https://ci3.googleusercontent.com/proxy/NS_eWBZ38sib0l_KTTAE9qVYDWGZpXPm1nCg7IMmWKe3qxs_w87P0YEezrFM9gCs17ThY1gjnJ8dlm6UQEvqLP6W5w4PCdo2beyHoi3fOov9_AyBiRQB_heBf63MHLqD8u7OHP_4q4SaWm3tQVX3oWnJ2h9G80Jdo8Z94Lvs3zSjm_p-zh1y4KbXsv47SeFANQHLzE4GmZZNIMD6HH5joxerCnQ_Fkhj6htdFKhq78a0S15e7Gw92EcsIVmiyQsliFeIhSwQP8UnQsWFnrGAW7AoCTNz5Pa0_Z39c5i3-KoWGTgPKM8OJf3F0IUVEZGGpQyZ2jIJztWxzFhhv_yG8VpCQx-kznrJmSXXz75NJN7vVMfpFZ5VxnS31xczIgkZYmdin95MFYXYNFrtqimvS5it=s0-d-e1-ft#http://email.{{env('SITE_NAME')}}.com/wf/open?upn=b5NRcAX-2BuEuTGJRk-2F9OpuKfrKYmj5hV-2Fn6N9joNM2c6Puv4hTm6b12dacE1iNBxY8nMVvxiEspeBYvqpAfz-2F2VK2mqxZkC8yXyp8IcNfpGOsVhlBTPFh8GG-2B6LM2Gn5EP8ZtWuDDZp89Ex-2FUufFBSS5XMLrJwn8U603mIsSjzDBe3wKbZfIbGH-2F85v3cbatkk-2Bu7N1VapN9ptW199LmQHBsQysn7Zlwc8cneGfGa9dQ-3D" alt="" width="1" height="1" border="0" style="height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important" class="CToWUd"></div>
 </body>
 </html>
