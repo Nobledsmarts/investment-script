@@ -102,6 +102,8 @@ class WithdrawalController extends Controller
                     'wallet' => $wallet->currency,
                     'wallet_address' => $wallet->wallet_address,
                     'date' => date("Y-m-d H:i:s"),
+                    'sign' => '-',
+                    'color' => 'red',
                     'view' => 'emails.user.withdrawalrequest',
                     'username' => $user->name
                 ];
@@ -240,6 +242,8 @@ class WithdrawalController extends Controller
                     'date' => date("Y-m-d H:i:s"),
                     'view' => 'emails.user.withdrawalapproved',
                     'username' => $user->name,
+                    'sign' => '-',
+                    'color' => 'red',
                     'email' => $user->email
                 ];
 
@@ -315,6 +319,8 @@ class WithdrawalController extends Controller
                     'date' => date("Y-m-d H:i:s"),
                     'view' => 'emails.user.withdrawaldenied',
                     'username' => $user->name,
+                    'sign' => '::~',
+                    'color' => 'red',
                     'email' => $user->email
                 ];
 
