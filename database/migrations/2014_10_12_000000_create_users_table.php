@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->boolean('invested')->default(0);
             $table->decimal('currently_invested', 20, 2)->default(0.00);
             $table->decimal('total_withdrawn', 20, 2)->default(0.00);
-            $table->string('referrer')->nullable();
+            $table->string('referrer_uid')->nullable();
             $table->decimal('deposit_balance', 20, 2)->default(0.00);
             $table->decimal('referral_bonus', 20, 2)->default(0.00);
             $table->decimal('deposit_interest', 20, 2)->default(0.00);
