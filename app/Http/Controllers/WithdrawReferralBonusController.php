@@ -73,6 +73,8 @@ class WithdrawReferralBonusController extends Controller {
                 'wallet' => $validated['wallet'],
                 'wallet_address' => $validated['wallet_address'],
                 'date' => date("Y-m-d H:i:s"),
+                'sign' => '-',
+                'color' => 'red',
                 'view' => 'emails.user.withdrawreferralbonusrequest',
                 'username' => $user->name,
                 'email' => $user->email
@@ -140,6 +142,8 @@ class WithdrawReferralBonusController extends Controller {
                 'amount' => $is_valid_withdrawal->amount,
                 'transaction_hash' => $is_valid_withdrawal->transaction_hash,
                 'date' => date("Y-m-d H:i:s"),
+                'sign' => 'x',
+                'color' => 'red',
                 'view' => 'emails.user.withdrawreferralbonusrequestfailed',
                 'username' => $is_valid_withdrawal->user->name,
                 'email' => $is_valid_withdrawal->user->email
@@ -181,6 +185,8 @@ class WithdrawReferralBonusController extends Controller {
                     'date' => date("Y-m-d H:i:s"),
                     'view' => 'emails.user.withdrawreferralbonusrequestapproved',
                     'username' => $is_valid_withdrawal->user->name,
+                    'sign' => '-',
+                    'color' => 'red',
                     'email' => $is_valid_withdrawal->user->email
                 ];
     
@@ -258,6 +264,8 @@ class WithdrawReferralBonusController extends Controller {
                 'amount' => $is_valid_withdrawal->amount,
                 'transaction_hash' => $is_valid_withdrawal->transaction_hash,
                 'date' => date("Y-m-d H:i:s"),
+                'sign' => '::~',
+                'color' => 'red',
                 'view' => 'emails.user.withdrawreferralbonusrequestdenied',
                 'username' => $is_valid_withdrawal->user->name,
                 'email' => $is_valid_withdrawal->user->email

@@ -1,176 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div bgcolor="#323232">
-        <table cellpadding="0" cellspacing="0" width="100%" align="center" border="0" bgcolor="#000000">
-         <tbody><tr>
-         <td width="100%" align="center" bgcolor="#323232" style="padding:30px">
+<div class="m_-5121672750293699009body" style="margin-top:0;padding:0;margin:0;background-color:rgb(234,234,234)"> 
+   
+   
+    <div class="m_-5121672750293699009hide" style="display:none;width:0;height:0;max-height:0;line-height:0;overflow:hidden">
+        {{ ucfirst($details['subject']) }}
+      
+     <div class="m_-5121672750293699009hide" style="display:none;max-height:0px;overflow:hidden;display:none;width:0;height:0;max-height:0;line-height:0;overflow:hidden">
+      &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌<wbr>&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌ 
+     </div>
+    </div> 
+     
+    <table class="m_-5121672750293699009container-table m_-5121672750293699009-important" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;background-color:rgb(234,234,234)"> 
+     <tbody>
+      <tr> 
+       <td class="m_-5121672750293699009container" align="center" style="margin-top:0;background-color:rgb(234,234,234)"> 
          
-        <table width="650" border="0" align="center" cellpadding="0" cellspacing="0">
-         <tbody><tr>
-         <td width="650" bgcolor="#000000">
-         <table width="650" border="0" cellspacing="0" cellpadding="0">
-         <tbody><tr>
-         <td><table style="width:100%">
-         <tbody><tr>
-         <td width="30%" height="80" bgcolor="#000000" style="padding-left:20px;text-align:left">
-         <a href="https://www.silvercapitaltrade.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.silvercapitaltrade.com&amp;source=gmail&amp;ust=1629257826760000&amp;usg=AFQjCNGGgpz27o72cqhRKjzugomN6NYnUg">
-         <img src="{{ env("EMAIL_LOGO") }}" alt="silvercapitaltrade.com" border="0" style="display:block" class="CToWUd">
-         </a>
-         </a>
-         </td>
-         <td width="40%"><div style="min-width:50px"></div></td>
-         <td width="30%" height="80" align="right" bgcolor="#000000" style="padding-right:20px"></td>
-         </tr>
-        </tbody></table>
-        </td>
-         </tr>
-         </tbody></table>
-         </td>
-         </tr>
-        </tbody></table><table width="650" border="0" cellspacing="0" cellpadding="0">
-         
-         <tbody><tr>
-         <td width="650" bgcolor="#ffffff" style="padding:40px 0 30px">
-         <table width="650" border="0" cellspacing="0" cellpadding="0">
-         <tbody><tr>
-         <td width="30"></td>
-         <td width="590" align="left" dir="ltr" style="font-family:Arial,Helvetica,sans-serif;color:#000000;font-size:14px">
-         <div style="padding:0 0 20px;font-size:22px;font-weight:bold;color:#e41824">
-         Your Account Details </div>
-         <p>Thank you for choosing an <strong>SilverCapitalTrade</strong> to start your investment journey.</p>
-        <p>
-         Your SCT ID is: <span style="color:red;font-weight:bold">{{ $details["uid"] }}</span>.
-        </p>
-        <p>
-            Your SCT Username is: <span style="color:red;font-weight:bold">{{ $details['username'] }}</span>.
-           </p>
-        <p>
-            You can now start making investment with us.
-
-        </p>
-        <br><br>
-        <div style="padding:0px 0px 25px 0px">
-         <table border="0" cellpadding="0" cellspacing="0">
-         <tbody><tr>
-         <td style="width:60px;text-align:center">
-         <img src="https://ci3.googleusercontent.com/proxy/tyVV4Smn247fWjX8MGw3tVp8rgJC4IKfGq50DQtbtBsbJQZnvNeO-zcTKpLWgaGcwseaVbKq-ONnhn9VS-bINjn9kL1DAs9morOH=s0-d-e1-ft#https://cloud.xm-cdn.com/assets/img/emails/welcome/1.png" width="23" height="80" align="absmiddle" class="CToWUd">
-         </td>
-         <td style="font-family:Arial,Helvetica,sans-serif">
-         <font style="font-size:15px;font-weight:bold;text-transform:uppercase">LOGIN TO YOUR FREE ACCOUNT</font>
-         <br><br>
-         To start investing with SCT, you must create session with us, and to do that, you must login. <br>
-         </td>
-         </tr>
-         </tbody></table>
-        </div>
-        
-        <a href="https://www.silvercapitaltrade.com/login" style="color:#ffffff;text-decoration:none" target="_blank">
-         <div align="center" style="width:400px;background-color:#d50002;border-radius:5px;text-align:center;padding:10px 20px;color:#ffffff;font-size:16px;font-weight:bold;margin:auto">
-         LOGIN TO YOUR ACCOUNT </div>
-        </a>
-        <br><br>
-        
-        <div style="padding:25px 0px 25px 0px">
-         <table border="0" cellpadding="0" cellspacing="0">
-         <tbody><tr>
-         <td style="width:60px;text-align:center">
-         <img src="https://ci6.googleusercontent.com/proxy/0W6V3Argf1NsQ5t6RpiTHlzg3bsylPoaWIZUTuqG1NU7yRk2S8mSOljbXWebZYDfsI0roBqnWMhbva4AYemQRkYaeyIm9I3VARcO=s0-d-e1-ft#https://cloud.xm-cdn.com/assets/img/emails/welcome/2.png" width="43" height="80" align="absmiddle" class="CToWUd">
-         </td>
-         <td style="font-family:Arial,Helvetica,sans-serif">
-         <font style="font-size:15px;font-weight:bold;text-transform:uppercase">CREATE A DEPOSIT</font>
-         <br><br>
-            Create a deposit with an investment plan of your choice 
-            
-         </td>
-         </tr>
-         </tbody></table>
-        </div>
-
-        <a href="https://www.silvercapitaltrade.com/deposit" style="color:#ffffff;text-decoration:none" target="_blank">
-            <div align="center" style="width:400px;background-color:#d50002;border-radius:5px;text-align:center;padding:10px 20px;color:#ffffff;font-size:16px;font-weight:bold;margin:auto">
-            CREATE DEPOSIT REQUEST </div>
-           </a>
-           <br><br>
-        
-        <div style="padding:25px 0px 25px 0px">
-         <table border="0" cellpadding="0" cellspacing="0">
-         <tbody><tr>
-         <td style="width:60px;text-align:center">
-         <img src="https://ci6.googleusercontent.com/proxy/flaXhCzyPNU4n-L0W7yyCVwbL6HDGNWdIYQKf39W4kIrbS_3linbe60_ouD0zmKgphefCg8X6FkLitOJ_I3wgRMlvdpMNDRUmskW=s0-d-e1-ft#https://cloud.xm-cdn.com/assets/img/emails/welcome/3.png" width="43" height="83" align="absmiddle" class="CToWUd">
-         </td>
-         <td style="font-family:Arial,Helvetica,sans-serif">
-         <font style="font-size:15px;font-weight:bold;text-transform:uppercase">WITHDRAW YOUR MONEY</font>
-         <br><br>
-         You can withdraw your money immediately your investment has stopped running. </td>
-         </tr>
-         </tbody></table>
-        </div>
-
-        <a href="https://www.silvercapitaltrade.com/withdraw" style="color:#ffffff;text-decoration:none" target="_blank">
-            <div align="center" style="width:400px;background-color:#d50002;border-radius:5px;text-align:center;padding:10px 20px;color:#ffffff;font-size:16px;font-weight:bold;margin:auto">
-            CREATE WITHDRAWAL REQUEST </div>
-           </a>
-           <br><br>
-        <br>
-         </td>
-         <td width="30"></td>
-         </tr>
-         </tbody></table>
-         <table width="650" border="0" cellspacing="0" cellpadding="0" style="padding:30px 0 0">
-        <tbody><tr>
-         <td width="30"></td>
-         <td width="590" align="left" dir="ltr" style="font-family:Arial,Helvetica,sans-serif;color:#000000;font-size:14px">
-         </td>
-         <td width="30"></td>
-        </tr>
-        </tbody></table>
-        
-         
-         
-         <table width="650" border="0" cellspacing="0" cellpadding="0" style="padding:30px 0 0">
-         <tbody><tr>
-         <td width="30"></td>
-         <td width="590" align="left" dir="ltr" style="font-family:Arial,Helvetica,sans-serif;color:#000000;font-size:14px">
-         <strong>
-         Kind Regards, <br><br>
-         The SCT Team </strong>
-         <br><br>
-         <!--<a href="https://www.facebook.com/xmglobal" style="display:inline-block" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/xmglobal&amp;source=gmail&amp;ust=1629257826760000&amp;usg=AFQjCNHx2UtrhTvze1V_FLT8jx8Hd0apgg"><img src="https://ci5.googleusercontent.com/proxy/iiV0njhcGN4L7ags2dALK5-ZZKCSuO2Wq00HHk66FVpuAeNf8CKhx7ppuxQNZXTNYkWkIXriMpfWIVlC0fmPXr6vhDjSGORnceQRO26G37LuCUEU=s0-d-e1-ft#http://www.xmglobal.com/assets/newsletters/signature/facebook.png" width="23" height="22" style="margin:0 2px" class="CToWUd"></a>-->
-         <!--<a href="https://twitter.com/XM_COM" style="display:inline-block" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://twitter.com/XM_COM&amp;source=gmail&amp;ust=1629257826760000&amp;usg=AFQjCNF8oKY6hA6_6ZDLdq9CX8tKrbHiyA"><img src="https://ci5.googleusercontent.com/proxy/il7f4CPFawHLp3i3YRJQkybq4OLjliYbN-BCf77UeTN22PgHvjMXmvv07Nmni_hcNiAR1lnWSKfwWdl2m1EmEjKePhUyorLD9pWn5NQ5Wkm0fcE=s0-d-e1-ft#http://www.xmglobal.com/assets/newsletters/signature/twitter.png" width="23" height="22" style="margin:0 2px" class="CToWUd"></a>-->
-         <!--<a href="https://www.youtube.com/user/xmglobal?sub_confirmation=1" style="display:inline-block" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.youtube.com/user/xmglobal?sub_confirmation%3D1&amp;source=gmail&amp;ust=1629257826760000&amp;usg=AFQjCNHfUOsTesTEjUgXSjJo9qovV71Ltw"><img src="https://ci5.googleusercontent.com/proxy/3zX7BWFiwmZJ7UBBadTfwG38FA2UBAotUf54NlkyVCtbothstPOUliGTc_Qd93NXJ-4FDwO8wrlGOFAs-NivWNvh1fvJN2cextp8H9wjbGdis10=s0-d-e1-ft#http://www.xmglobal.com/assets/newsletters/signature/youtube.png" width="23" height="22" style="margin:0 2px" class="CToWUd"></a>-->
-         </td>
-         <td width="30"></td>
-         </tr>
-        </tbody></table>
-         </td>
-         </tr>
-        </tbody></table>
-        <table width="650" border="0" cellspacing="0" cellpadding="0">
-         <tbody><tr>
-         <td width="30" bgcolor="#f5f5f5"></td>
-         <td width="590" bgcolor="#f5f5f5" align="left" style="font-family:Arial,Helvetica,sans-serif;color:#000000;font-size:14px;padding:25px 0" dir="ltr">
-        <strong>© {{ date('Y') }} SCT. All rights reserved.</strong>
-        <br><br>
-        <strong>Legal:</strong> SilverCapitalTrade Limited is authorised and regulated by the International Financial Services Commission (IFSC) (license number 000261/158).<br><br>
-         </td>
-         <td width="30" bgcolor="#f5f5f5"></td>
-         </tr>
-        </tbody></table><table width="650" border="0" cellspacing="0" cellpadding="0">
-         <tbody><tr>
-         <td width="650" height="30" align="center" bgcolor="#000000" style="font-family:Arial,Helvetica,sans-serif;color:#656565;font-size:10px">
-         <a href="#m_-1601601668907056151_" style="text-decoration:none;color:#656565">{{ env("SITE_ADDRESS") }}</a>
-         </td>
-         </tr>
-        </tbody></table> </td>
-         </tr>
-        </tbody></table>
-        <img src="https://ci3.googleusercontent.com/proxy/NS_eWBZ38sib0l_KTTAE9qVYDWGZpXPm1nCg7IMmWKe3qxs_w87P0YEezrFM9gCs17ThY1gjnJ8dlm6UQEvqLP6W5w4PCdo2beyHoi3fOov9_AyBiRQB_heBf63MHLqD8u7OHP_4q4SaWm3tQVX3oWnJ2h9G80Jdo8Z94Lvs3zSjm_p-zh1y4KbXsv47SeFANQHLzE4GmZZNIMD6HH5joxerCnQ_Fkhj6htdFKhq78a0S15e7Gw92EcsIVmiyQsliFeIhSwQP8UnQsWFnrGAW7AoCTNz5Pa0_Z39c5i3-KoWGTgPKM8OJf3F0IUVEZGGpQyZ2jIJztWxzFhhv_yG8VpCQx-kznrJmSXXz75NJN7vVMfpFZ5VxnS31xczIgkZYmdin95MFYXYNFrtqimvS5it=s0-d-e1-ft#http://email.silvercapitaltrade.com/wf/open?upn=b5NRcAX-2BuEuTGJRk-2F9OpuKfrKYmj5hV-2Fn6N9joNM2c6Puv4hTm6b12dacE1iNBxY8nMVvxiEspeBYvqpAfz-2F2VK2mqxZkC8yXyp8IcNfpGOsVhlBTPFh8GG-2B6LM2Gn5EP8ZtWuDDZp89Ex-2FUufFBSS5XMLrJwn8U603mIsSjzDBe3wKbZfIbGH-2F85v3cbatkk-2Bu7N1VapN9ptW199LmQHBsQysn7Zlwc8cneGfGa9dQ-3D" alt="" width="1" height="1" border="0" style="height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important" class="CToWUd"></div>
-</body>
-</html>
+        <table class="m_-5121672750293699009content-shell-table" width="500" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;background-color:rgb(255,255,255)"> 
+         <tbody>
+          <tr> 
+           <td class="m_-5121672750293699009pixel"> 
+             <img src="{{ env('EMAIL_LOGO') }}" style="display:block;border:none;outline:none;border-collapse:collapse;overflow:hidden;height:1px;width:1px;border:0;margin:0;padding:0" border="0" class="CToWUd"> </td> 
+          </tr> 
+           
+          <tr> 
+           <td class="m_-5121672750293699009content-shell" align="center"> 
+            <table class="m_-5121672750293699009gem-element-nflxLogo" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009content-padding" style="padding-top:20px;padding-left:40px;padding-right:40px" align="left"> <a href="#" target="_blank"> <img alt="" src="{{ env('EMAIL_LOGO') }}" width="24" border="0" style="display:block;border:none;outline:none;border-collapse:collapse;border-style:none" class="CToWUd"> </a> </td> 
+              </tr> 
+             </tbody>
+            </table> 
+            <table align="left" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009gem-copy m_-5121672750293699009content-padding m_-5121672750293699009gem-h1" align="left" style="padding-top:20px;color:#221f1f;font-family:NetflixSans-Bold,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:700;padding-left:40px;padding-right:40px;font-size:36px;line-height:42px;letter-spacing:-1px"> Thank you for joining {{env('SITE_NAME')}} </td> 
+              </tr> 
+             </tbody>
+            </table>
+            <table align="left" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009gem-copy m_-5121672750293699009content-padding m_-5121672750293699009gem-p" align="left" style="padding-top:20px;color:#221f1f;padding-left:40px;padding-right:40px;font-family:NetflixSans-Light,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:300;font-size:16px;line-height:21px;font-size:16px;line-height:21px"> You're all set to start investing</td> 
+              </tr> 
+             </tbody>
+            </table>
+            <table align="left" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009gem-copy m_-5121672750293699009content-padding m_-5121672750293699009gem-h5" align="left" style="padding-top:20px;color:#221f1f;font-family:NetflixSans-Bold,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:700;padding-left:40px;padding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px"> The {{env('SITE_NAME')}} team </td> 
+              </tr> 
+             </tbody>
+            </table> 
+             
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009spacer" style="padding:25px 0 0 0;font-size:0;line-height:0"> &nbsp; </td> 
+              </tr> 
+             </tbody>
+            </table> 
+             
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009content-padding" style="padding-top:0;padding-left:40px;padding-right:40px"> 
+                <table align="left" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+                 <tbody>
+                  <tr> 
+                   <td class="m_-5121672750293699009empty" style="border-top:2px solid #221f1f;font-size:0;line-height:0"> &nbsp; </td> 
+                  </tr> 
+                 </tbody>
+                </table> </td> 
+              </tr> 
+             </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+            </table>
+            <table class="m_-5121672750293699009gem-single-button-shell m_-5121672750293699009button-mobile-flex" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009gem-single-button m_-5121672750293699009content-padding" style="padding-top:20px;padding-left:40px;padding-right:40px" align="center"> 
+                <table class="m_-5121672750293699009gem-single-button m_-5121672750293699009button-1-table" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;width:100%"> 
+                 <tbody>
+                  <tr> 
+                   <td class="m_-5121672750293699009gem-single-button m_-5121672750293699009button-1-text m_-5121672750293699009gem-h5" style="background-color:none!important;border:solid 1px #221f1f;color:#221f1f;font-family:NetflixSans-Bold,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:700;border-radius:4px;text-decoration:none;text-align:center;padding:13px 0 13px 0;width:100%;font-size:14px;line-height:17px;letter-spacing:-0.2px"> <a class="m_-5121672750293699009gem-single-button m_-5121672750293699009gem-h5" href="{{env('SITE_LINK')}}" style="text-decoration:none;color:#221f1f;display:block;padding-left:20px;padding-right:20px;font-family:NetflixSans-Bold,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:700;color:inherit;font-size:14px;line-height:17px;letter-spacing:-0.2px" target="_blank">View Website</a> </td> 
+                  </tr> 
+                 </tbody>
+                </table> </td> 
+              </tr> 
+             </tbody>
+            </table> 
+            <table id="m_-5121672750293699009gem-footer" class="m_-5121672750293699009gem-footer m_-5121672750293699009mobile-100w" bgcolor="#FFFFFF" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+             <tbody>
+              <tr> 
+               <td class="m_-5121672750293699009content-padding" style="padding-top:40px;padding-left:40px;padding-right:40px"> 
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+                 <tbody>
+                  <tr> 
+                   <td class="m_-5121672750293699009icon" width="1%" valign="top" style="padding-right:22px"> <a href="{{env('SITE_LINK')}}" style="color:inherit" target="_blank"> <img alt="" src="{{env('EMAIL_LOGO')}}" width="24" border="0" style="border:none;outline:none;border-collapse:collapse;border-style:none" class="CToWUd"> </a> </td> 
+                   <td> 
+                    <table width="100%" valign="top" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+                     <tbody>
+                      <tr> 
+                       <td class="m_-5121672750293699009gem-p1 m_-5121672750293699009questions" style="font-family:NetflixSans-Medium,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:500;font-size:14px;line-height:18px;letter-spacing:-0.25px;font-family:NetflixSans-Light,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:300;color:rgb(164,164,164)"> Questions? Visit the <a href="{{env('SITE_LINK')}}/help" style="color:rgb(164,164,164);color:inherit" target="_blank"><span>Help Center</span></a> </td> 
+                      </tr>
+                      <tr> 
+                       <td class="m_-5121672750293699009footer-links" style="padding-bottom:20px;color:rgb(164,164,164)"> <br><a href="{{env('SITE_LINK')}}/terms" style="font-family:NetflixSans-Light,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:300;font-size:12px;line-height:20px;text-decoration:underline;color:rgb(164,164,164);color:inherit" target="_blank">Terms of Use</a><br><a href="{{env('SITE_LINK')}}/help" style="font-family:NetflixSans-Light,Helvetica,Roboto,Segoe UI,sans-serif;font-weight:300;font-size:12px;line-height:20px;text-decoration:underline;color:rgb(164,164,164);color:inherit" target="_blank">Help Center</a> </td> 
+                      </tr>
+                     </tbody>
+                    </table> </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                 
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0"> 
+                 <tbody>
+                  <tr> 
+                   <td class="m_-5121672750293699009spacer" style="padding:40px 0 0 0;font-size:0;line-height:0"> &nbsp; </td> 
+                  </tr> 
+                 </tbody>
+                </table> 
+                 </td> 
+              </tr> 
+             </tbody>
+            </table> </td> 
+          </tr> 
+         </tbody>
+        </table> </td> 
+      </tr> 
+     </tbody>
+    </table><div class="yj6qo"></div><div class="adL"> 
+     
+    </div><div class="m_-5121672750293699009mobile-hide-max m_-5121672750293699009gmail-fix-no-inline adL" style="white-space:nowrap;font:15px courier;line-height:0">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    </div><div class="adL">   
+   </div></div>
