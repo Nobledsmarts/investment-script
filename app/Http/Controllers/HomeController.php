@@ -89,7 +89,21 @@ class HomeController extends Controller {
         $total_withdrawals = Withdrawal::where([
             'user_id' => $user['id'],
         ])->count();
-        return view('user.index', compact('page_title', 'total_deposits', 'total_withdrawals', 'total_denied_deposits', 'total_approved_deposits', 'total_pending_deposits', 'total_denied_withdrawals', 'total_pending_withdrawals', 'total_approved_withdrawals', 'recent_deposits', 'mode', 'user', 'transactions', 'plans', 'wallets', 'reviews', 'active_deposits'));
+
+        $account_balance = $user['deposit_balance'] + $user['deposit_interest'] + $user['referral_bonus'];
+        $deposit_interest = $user['deposit_interest'];
+        $currently_invested = $user['currently_invested'];
+        $referral_bonus = $user['referral_bonus'];
+        $total_withdrawn = $user['total_withdrawn'];
+
+        $total_account = $account_balance + $deposit_interest + $currently_invested + $referral_bonus + $total_withdrawn;
+        $account_balance_percent = empty(intval($account_balance)) ?  0 : number_format((($account_balance / $total_account) * 100), 1);
+        $deposit_interest_percent = empty(intval($deposit_interest)) ?  0 : number_format((($deposit_interest / $total_account) * 100), 1);
+        $currently_invested_percent = empty(intval($currently_invested)) ?  0 : number_format((($currently_invested / $total_account) * 100), 1);
+        $referral_bonus_percent = empty(intval($referral_bonus)) ?  0 : number_format((($referral_bonus / $total_account) * 100), 1);
+        $total_withdrawn_percent = empty(intval($total_withdrawn)) ?  0 : number_format((($total_withdrawn / $total_account) * 100), 1);
+        
+        return view('user.index', compact('total_withdrawn_percent', 'referral_bonus_percent', 'currently_invested_percent', 'deposit_interest_percent', 'account_balance_percent', 'page_title', 'total_deposits', 'total_withdrawals', 'total_denied_deposits', 'total_approved_deposits', 'total_pending_deposits', 'total_denied_withdrawals', 'total_pending_withdrawals', 'total_approved_withdrawals', 'recent_deposits', 'mode', 'user', 'transactions', 'plans', 'wallets', 'reviews', 'active_deposits'));
     }
     public function deposit(Request $request){
         $page_title = env('SITE_NAME') . " Investment Website | Deposit";

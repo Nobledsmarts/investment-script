@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/daily-interest-delete', [App\Http\Controllers\ProfitCronJobController::class, 'deleteCronJobs']);
 
+Route::get('/daily-interest-delete', [App\Http\Controllers\ProfitCronJobController::class, 'deleteCronJobs']);
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faqs']);
 Route::get('/plans', [App\Http\Controllers\HomeController::class, 'plans']);
@@ -42,10 +42,13 @@ Route::prefix('user')->group(function(){
     Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile']);
     Route::match(['get', 'post'],'/wallets', [App\Http\Controllers\UserWalletController::class, 'index']);
     Route::get('/deposit', [App\Http\Controllers\HomeController::class, 'deposit']);
+
+    Route::prefix('deposits')->group(function(){
+        Route::get('/', [App\Http\Controllers\HomeController::class, 'deposits']);
+        Route::match(['get', 'post'], '/active', [App\Http\Controllers\HomeController::class, 'activeDeposits']);
+        Route::match(['get', 'post'], '/inactive', [App\Http\Controllers\HomeController::class, 'inactiveDeposits']);
+    });
     
-    Route::get('/deposits', [App\Http\Controllers\HomeController::class, 'deposits']);
-    Route::match(['get', 'post'], '/deposits/active', [App\Http\Controllers\HomeController::class, 'activeDeposits']);
-    Route::match(['get', 'post'], '/deposits/inactive', [App\Http\Controllers\HomeController::class, 'inactiveDeposits']);
     Route::match(['get', 'post'], '/reinvest', [App\Http\Controllers\DepositController::class, 'reinvest']);
     Route::get('/reinvestments', [App\Http\Controllers\HomeController::class, 'reinvestments']);
     Route::match(['get', 'post'], '/withdrawal', [App\Http\Controllers\WithdrawalController::class, 'index']);

@@ -13,7 +13,7 @@ class IsAdmin extends Middleware {
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
-    public function handle($request, Closure $next) {
+    public function handle($request, Closure $next, ...$guards) {
         if(Auth::user() && Auth::user()->is_admin == 1) {
             return $next($request);
         }
