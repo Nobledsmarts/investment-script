@@ -33361,4 +33361,37 @@ img.away, img.busy, img.offline, img.online {
 .waves-effect .waves-ripple {
   z-index: -1; }
 
+.ww-100{
+  width : 100% !important;
+}
+
+.modal a.close-modal[class*="icon-"] {
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background: #900;
+  border: 2px solid #fff;
+  -webkit-border-radius:  26px;
+  -moz-border-radius:     26px;
+  -o-border-radius:       26px;
+  -ms-border-radius:      26px;
+  -moz-box-shadow:    1px 1px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  box-shadow:         1px 1px 5px rgba(0,0,0,0.5);
+
+}
+
+
+.sweet-alert button {
+  background : rgb(23 43 76) !important;
+}
 /*# sourceMappingURL=style.css.map */
