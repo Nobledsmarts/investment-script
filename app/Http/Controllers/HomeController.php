@@ -329,7 +329,7 @@ class HomeController extends Controller {
             $user = User::find($user->browsing_as);
         }
         $transactions = Transactions::where('user_id', $user['id'])->get();
-        $referrals = User::where('referrer', $user['name'])->get();
+        $referrals = User::where('referrer_uid', $user['uid'])->get();
         return view('user.profile', compact('page_title', 'mode', 'user', 'transactions', 'referrals'));
     }
 
