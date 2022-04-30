@@ -2,7 +2,7 @@
   <header class="main-header">
 	<div class="d-flex align-items-center logo-box justify-content-start">	
 		<!-- Logo -->
-		<a href="index.html" class="logo">
+		<a href="/user" class="logo">
 		  <b>NETCAPITALGLOBE</b>
 		</a>	
 	</div>  

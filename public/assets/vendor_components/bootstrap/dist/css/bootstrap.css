@@ -2994,13 +2994,13 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   border-radius: 0.2rem; }
 
-.fade {
+/* .fade {
   transition: opacity 0.15s linear; }
   @media (prefers-reduced-motion: reduce) {
     .fade {
       transition: none; } }
   .fade:not(.show) {
-    opacity: 0; }
+    opacity: 0; } */
 
 .collapse:not(.show) {
   display: none; }
@@ -4440,7 +4440,7 @@ textarea.form-control-lg {
   padding: 0.75rem;
   word-wrap: break-word; }
 
-.modal-open {
+/* .modal-open {
   overflow: hidden; }
   .modal-open .modal {
     overflow-x: hidden;
@@ -4677,7 +4677,7 @@ textarea.form-control-lg {
     .modal-fullscreen-xxxl-down .modal-body {
       overflow-y: auto; }
     .modal-fullscreen-xxxl-down .modal-footer {
-      border-radius: 0; } }
+      border-radius: 0; } } */
 .tooltip {
   position: absolute;
   z-index: 1080;
