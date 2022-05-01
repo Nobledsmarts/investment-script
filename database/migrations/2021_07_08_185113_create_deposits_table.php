@@ -17,7 +17,7 @@ class CreateDepositsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('child_investment_plan_id');
-            $table->unsignedBigInteger('user_wallet_id');
+            $table->unsignedBigInteger('wallet_id');
             $table->string('transaction_hash')->unique();
             $table->decimal('amount', 20, 2)->default(0.00);
             $table->integer('remaining_duration');
@@ -33,7 +33,7 @@ class CreateDepositsTable extends Migration
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('child_investment_plan_id')->references('id')->on('child_investment_plans')->onDelete('cascade');
-            $table->foreign('user_wallet_id')->references('id')->on('user_wallets')->onDelete('cascade');
+            $table->foreign('wallet_id')->references('id')->on('main_wallets')->onDelete('cascade');
         });
     }
 

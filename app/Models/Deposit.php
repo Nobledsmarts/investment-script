@@ -14,7 +14,7 @@ class Deposit extends Model
     protected $fillable = [
         'user_id',
         'child_investment_plan_id',
-        'user_wallet_id',
+        'wallet_id',
         'transaction_hash', 
         'amount', 
         'remaining_duration', 

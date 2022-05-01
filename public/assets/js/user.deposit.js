@@ -3,7 +3,7 @@ let depositForm = document.querySelector('.deposit-form');
 let catchErrorMsg = "sorry, something went wrong";
 let memoCont = document.querySelector('.memo-cont');
 
-console.log(depositBtns);
+// console.log(depositBtns);
 
 let randomAddr = "my random wallet address";
 let qrcode = null;
@@ -115,8 +115,8 @@ function initDepositFormAction(){
 
 async function processDeposit(form){
     let amount = form.elements.namedItem('amount').value;
-    let currencyIndex = form.elements.namedItem('user_wallet_id').selectedIndex;
-    let selectedCurrency = form.elements.namedItem('user_wallet_id').options[currencyIndex];
+    let currencyIndex = form.elements.namedItem('wallet_id').selectedIndex;
+    let selectedCurrency = form.elements.namedItem('wallet_id').options[currencyIndex];
     let currencySymbol = selectedCurrency.dataset.symbol;
     if(!!amount && !!currencyIndex){
         let selectedWalletRate = await tocrypto(currencySymbol);

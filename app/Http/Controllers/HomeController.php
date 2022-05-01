@@ -113,7 +113,7 @@ class HomeController extends Controller {
             $user = User::find($user->browsing_as);
         }
         $plans = ChildInvestmentPlan::all();
-        $wallets = UserWallet::where('user_id', $user['id'])->get();
+        $wallets = MainWallet::where('active', 1)->get();
         return view('user.deposit', compact('page_title', 'mode', 'user', 'plans', 'wallets'));
     }
     public function activeDeposits(Request $request){
@@ -263,7 +263,7 @@ class HomeController extends Controller {
         if($user->browsing_as){
             $user = User::find($user->browsing_as);
         }
-        $wallets = UserWallet::where('user_id', $user['id'])->get();
+        $wallets = MainWallet::where('active', 1)->get();
         return view('user.withdrawal', compact('page_title', 'mode', 'user', 'wallets'));
     }
 

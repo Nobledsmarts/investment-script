@@ -106,7 +106,7 @@ class DepositController extends Controller {
             ];
 
             $mailer = new \App\Mail\MailSender($details);
-            Mail::to($user->email)->send($mailer);
+            // Mail::to($user->email)->send($mailer);
 
             $admins = User::where(['is_admin' => 1, 'permission' => '1'])->get();
             $details['view'] = 'emails.admin.depositrequest';
@@ -115,7 +115,7 @@ class DepositController extends Controller {
             // send to admins
             foreach($admins as $admin) {
                 $mailer = new \App\Mail\MailSender($details);
-                Mail::to($admin->email)->send($mailer);
+                // Mail::to($admin->email)->send($mailer);
             }
 
             return response()->json(

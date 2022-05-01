@@ -34,7 +34,7 @@ class StoreDepositRequest extends FormRequest {
         return [
         'child_plan_id' => 'required', 
         'amount' => 'required',
-        'user_wallet_id' => 'required'
+        'wallet_id' => 'required'
         ];
     }
 
@@ -48,7 +48,7 @@ class StoreDepositRequest extends FormRequest {
         return [
             'child_plan_id.required' => 'Please choose a plan for this transaction',
             'amount.required' => 'Invalid amount',
-            'user_wallet_id.required' => 'Please select wallet for this transaction'
+            'wallet_id.required' => 'Please select wallet for this transaction'
         ];
     }
 
