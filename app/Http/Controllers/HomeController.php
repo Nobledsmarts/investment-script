@@ -534,8 +534,9 @@ class HomeController extends Controller {
 
     public function pammAndMamAccount(Request $request){
         $page_title = env('SITE_NAME') . " Investment Website | Pamm And Mam Account";
+        $plans = ChildInvestmentPlan::all();
         $settings = SiteSettings::latest()->first();
-        return view('visitor.pamm-and-mam-account', compact('page_title', 'settings'));
+        return view('visitor.pamm-and-mam-account', compact('page_title', 'settings', 'plans'));
     }
 
     public function affiliate(Request $request){

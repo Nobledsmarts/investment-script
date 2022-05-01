@@ -667,91 +667,29 @@ background: #012c6e !important;
 </div>
 <div class="container-fluid">
     <div class="row rtyuiy567">
-
-
-
-        <div class="col-lg-3">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">LITE PLAN</h5>
-                    <h6 class="card-price text-center">7%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $1,000 - $24,999 </li>
-                        <li><b>R.O.I</b>: 1% Daily</li>
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 5%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
+        @foreach($plans as $plan)
+            @if($plan->parent_plan->name == 'pamm')
+                <div class="col-lg-3">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">{{ $plan->name }} PLAN</h5>
+                            <h6 class="card-price text-center">{{ $plan->interest_rate }}%<span class="period">/Daily</span></h6>
+                            <hr>
+                            <ul>
+                                <li><b>Investment</b>: ${{ $plan->minimum_amount }} - ${{ $plan->maximum_amount }}</li>
+                                <li><b>R.O.I</b>: {{ $plan->interest_rate }}% Daily</li>
+                                <!-- <li>Monthly Withdrawals</li> -->
+                                <li><b>Plan Duration</b>: {{ $plan->duration }} Days</li>
+                                <li><b>Referral Bonus</b>: {{ $plan->referral_bonus }}%</li>
+                                <li><b>24/7 Support</b>: YES</li>
+                            </ul>
+                            <a href="/login"
+                                class="btn btn-block btn-primary text-uppercase">Invest</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- LITE PLAN -->
-        <div class="col-lg-3">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Active PLAN</h5>
-                    <h6 class="card-price text-center">12%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $25,000 - $99,999
-                        </li>
-                        <li><b>R.O.I</b>: 1.71% Daily</li>
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 5%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROFESSIONAL PLAN -->
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Master PLAN</h5>
-                    <h6 class="card-price text-center">15%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $100,000 - $199,999
-                        </li>
-                        <li><b>R.O.I</b>: 2.14% Daily</li>
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 10%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Ultimate Plan -->
-        <div class="col-lg-3">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center tup">Magnate Plan</h5>
-                    <h6 class="card-price text-center">18%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $200,000 - Unlimited
-                        </li>
-                        <li><b>R.O.I</b>: 2.57% Daily</li>
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 10%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
-                </div>
-            </div>
-        </div>
+            @endif
+        @endforeach
     </div>
 </div>
 </section>
