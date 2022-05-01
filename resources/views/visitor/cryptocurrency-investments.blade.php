@@ -483,93 +483,30 @@ background: #012c6e !important;
 </div>
 <div class="container-fluid">
     <div class="row rtyuiy567">
-
-        <div class="col-lg-3">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Starter PLAN</h5>
-                    <h6 class="card-price text-center">21%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $200 - $4,999</li>
-                        <li><b>R.O.I</b>: 3% Daily</li>
-                        <!-- <li>Monthly Withdrawals</li> -->
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 5%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
+        @foreach($plans as $plan)
+            @if($plan->parent_plan->name == 'crypto')
+                <div class="col-lg-3">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">{{ $plan->name }} PLAN</h5>
+                            <h6 class="card-price text-center">{{ $plan->interest_rate }}%<span class="period">/Daily</span></h6>
+                            <hr>
+                            <ul>
+                                <li><b>Investment</b>: ${{ $plan->minimum_amount }} - ${{ $plan->maximum_amount }}</li>
+                                <li><b>R.O.I</b>: {{ $plan->interest_rate }}% Daily</li>
+                                <!-- <li>Monthly Withdrawals</li> -->
+                                <li><b>Plan Duration</b>: {{ $plan->duration }} Days</li>
+                                <li><b>Referral Bonus</b>: {{ $plan->referral_bonus }}%</li>
+                                <li><b>24/7 Support</b>: YES</li>
+                            </ul>
+                            <a href="/login"
+                                class="btn btn-block btn-primary text-uppercase">Invest</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            @endif
+        @endforeach
 
-        <!-- LITE PLAN -->
-        <div class="col-lg-3">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Premium PLAN</h5>
-                    <h6 class="card-price text-center">35%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $5,000 - $19,999
-                        </li>
-                        <li><b>R.O.I</b>: 5% Daily</li>
-                        <!-- <li>Monthly Withdrawals</li> -->
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 5%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROFESSIONAL PLAN -->
-        <div class="col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Professional PLAN</h5>
-                    <h6 class="card-price text-center">49%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $20,000 - $49,999
-                        </li>
-                        <li><b>R.O.I</b>: 7% Daily</li>
-                        <!-- <li>Monthly Withdrawals</li> -->
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 10%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Ultimate Plan -->
-        <div class="col-lg-3">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center tup">Platinum Plan</h5>
-                    <h6 class="card-price text-center">70%<span class="period">/Weekly</span></h6>
-                    <hr>
-                    <ul>
-                        <li><b>Investment</b>: $50,000 - Unlimited
-                        </li>
-                        <li><b>R.O.I</b>: 10% Daily</li>
-                        <!-- <li>Monthly Withdrawals</li> -->
-                        <li><b>Plan Duration</b>: 7 Days</li>
-                        <li><b>Referral Bonus</b>: 10%</li>
-                        <li><b>24/7 Support</b>: YES</li>
-                    </ul>
-                    <a href="secured/auth/create-new-account.html"
-                        class="btn btn-block btn-primary text-uppercase">Invest</a>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 </section>

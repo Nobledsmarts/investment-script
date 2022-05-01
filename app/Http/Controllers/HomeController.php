@@ -545,9 +545,10 @@ class HomeController extends Controller {
     }
 
     public function cryptocurrencyInvestments(Request $request){
+        $plans = ChildInvestmentPlan::all();
         $page_title = env('SITE_NAME') . " Investment Website | Cryptocurrency Investments";
         $settings = SiteSettings::latest()->first();
-        return view('visitor.cryptocurrency-investments', compact('page_title', 'settings'));
+        return view('visitor.cryptocurrency-investments', compact('page_title', 'settings', 'plans'));
     }
     
     public function terms(Request $request){
