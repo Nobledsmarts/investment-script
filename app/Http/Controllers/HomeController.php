@@ -529,7 +529,8 @@ class HomeController extends Controller {
     public function retirementAndPension(Request $request){
         $page_title = env('SITE_NAME') . " Investment Website | Retirement And Pension";
         $settings = SiteSettings::latest()->first();
-        return view('visitor.retirement-and-pension', compact('page_title', 'settings'));
+        $plans = ChildInvestmentPlan::all();
+        return view('visitor.retirement-and-pension', compact('page_title', 'settings', 'plans'));
     }
 
     public function pammAndMamAccount(Request $request){
