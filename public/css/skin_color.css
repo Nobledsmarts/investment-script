@@ -9,140 +9,10 @@ File: scss
 /*Lite color*/
 /*Theme Colors For Dark*/
 /*---light skin---*/
-.light-skin .main-header li.user-header {
-  background-color: #ffffff; }
-.light-skin .main-header .navbar .sidebar-toggle {
-  color: #ffffff; }
-.light-skin .main-header .navbar .res-only-view {
-  color: #ffffff; }
-.light-skin .main-header .navbar .nav > li > a:hover, .light-skin .main-header .navbar .nav > li > a:active, .light-skin .main-header .navbar .nav > li > a:focus {
-  background-color: rgba(0, 0, 0, 0.03);
-  color: #7367F0; }
-.light-skin .main-header .navbar .nav .open > a {
-  background-color: rgba(0, 0, 0, 0.05); }
-  .light-skin .main-header .navbar .nav .open > a:hover, .light-skin .main-header .navbar .nav .open > a:focus {
-    background-color: rgba(0, 0, 0, 0.05); }
-.light-skin .main-header .navbar .nav > .active > a {
-  background-color: rgba(0, 0, 0, 0.05); }
-.light-skin .main-header .app-menu .dropdown-mega-menu .nav > li > a {
-  color: #3b6dc1; }
-.light-skin .main-sidebar {
-  border-right: 0px solid rgba(72, 94, 144, 0.16);
-  background-color: #ffffff;
-  box-shadow: 0 0 15px 0 rgba(34, 41, 47, 0.05); }
-.light-skin .user-panel > .info {
-  color: #ffffff; }
-  .light-skin .user-panel > .info > a {
-    color: #ffffff; }
-.light-skin .sidebar-menu > li:hover > a, .light-skin .sidebar-menu > li:active > a, .light-skin .sidebar-menu > li.active > a {
-  color: #172b4c; }
-.light-skin .sidebar-menu > li.active > a {
-  background-color: #172b4c;
-  color: #ffffff; }
-  .light-skin .sidebar-menu > li.active > a > i {
-    color: #ffffff; }
-  .light-skin .sidebar-menu > li.active > a:after {
-    content: " ";
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: none;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 22px 10px 22px 0;
-    border-color: transparent #fafafa transparent transparent !important; }
-.light-skin .sidebar-menu > li.menu-open > a {
-  color: #172b4c; }
-  .light-skin .sidebar-menu > li.menu-open > a svg {
-    color: #172b4c; }
-.light-skin .sidebar-menu > li > .treeview-menu {
-  margin: 0 0px; }
-.light-skin.sidebar-collapse .sidebar-menu > li > .treeview-menu {
-  background-color: #ffffff;
-  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1); }
-  .light-skin.sidebar-collapse .sidebar-menu > li > .treeview-menu > .treeview .treeview-menu {
-    background-color: #ffffff;
-    box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1); }
-.light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span {
-  background-color: #ffffff !important;
-  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1); }
-.light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li.active > a > span {
-  background: #ffffff !important;
-  color: #ffffff; }
-.light-skin .sidebar a {
-  color: #625F6E; }
-  .light-skin .sidebar a:hover {
-    text-decoration: none; }
-.light-skin .sidebar-form {
-  border-radius: 3px;
-  border: 1px solid gray; }
-  .light-skin .sidebar-form input[type="text"] {
-    box-shadow: none;
-    background-color: rgba(0, 0, 0, 0.59);
-    border: 1px solid rgba(0, 0, 0, 0.59);
-    height: 35px;
-    color: #ffffff;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 2px; }
-    .light-skin .sidebar-form input[type="text"]:focus {
-      color: #ffffff; }
-      .light-skin .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
-        color: #ffffff; }
-  .light-skin .sidebar-form .btn {
-    box-shadow: none;
-    background-color: rgba(0, 0, 0, 0.59);
-    border: 1px solid rgba(0, 0, 0, 0.59);
-    height: 35px;
-    color: #f3f6f9;
-    border-top-left-radius: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 0; }
-.light-skin .control-sidebar {
-  color: #172b4c;
-  background-color: #ffffff; }
-  .light-skin .control-sidebar + .control-sidebar-bg {
-    -webkit-box-shadow: 0px 5px 10px 1px rgba(77, 77, 77, 0.2);
-    -moz-box-shadow: 0px 5px 10px 1px rgba(77, 77, 77, 0.2);
-    box-shadow: 0px 5px 10px 1px rgba(77, 77, 77, 0.2); }
-  .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs {
-    border-bottom: 1px solid #cccccc; }
-    .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a {
-      color: #172b4c;
-      border-bottom-color: #cccccc; }
-      .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a:hover, .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a:active, .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a:focus {
-        border-bottom-color: #cccccc;
-        background-color: transparent; }
-      .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a.active {
-        background-color: transparent; }
-        .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a.active:hover, .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a.active:active, .light-skin .control-sidebar .nav-tabs.control-sidebar-tabs > li > a.active:focus {
-          background-color: transparent; }
-  .light-skin .control-sidebar .control-sidebar-heading {
-    color: #172b4c; }
-  .light-skin .control-sidebar .control-sidebar-subheading {
-    color: #172b4c; }
-  .light-skin .control-sidebar .control-sidebar-menu {
-    margin-left: -14px; }
-    .light-skin .control-sidebar .control-sidebar-menu > li > a:hover {
-      background-color: #f3f6f9; }
-    .light-skin .control-sidebar .control-sidebar-menu > li > a .menu-info > p {
-      color: #666666; }
 
-.control-sidebar + .control-sidebar-bg {
-  background-color: #ffffff; }
-
-@media (max-width: 767px) {
-  .light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span {
-    background-color: rgba(255, 255, 255, 0) !important; }
-  .light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li.menu-open > a {
-    background-color: rgba(255, 255, 255, 0.95) !important; }
-  .light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li.active > a {
-    background-color: rgba(255, 255, 255, 0.95) !important; } }
-.alert-primary, .alert-danger, .alert-error, .alert-info, .alert-success, .alert-warning, .bg-black, .bg-black-active, .callout.callout-danger, .callout.callout-info, .callout.callout-success, .callout.callout-warning, .callout.callout-primary, .label-danger, .label-info, .label-primary, .label-success, .label-warning, .modal-danger .modal-body, .modal-danger .modal-footer, .modal-danger .modal-header, .modal-info .modal-body, .modal-info .modal-footer, .modal-info .modal-header, .modal-primary .modal-body, .modal-primary .modal-footer, .modal-primary .modal-header, .modal-success .modal-body, .modal-success .modal-footer, .modal-success .modal-header, .modal-warning .modal-body, .modal-warning .modal-footer, .modal-warning .modal-header, .bg-warning, .bg-gray, .modal-primary .modal-header *, .modal-info .modal-header *, .modal-success .modal-header *, .modal-danger .modal-header *, .modal-warning .modal-header * {
-  color: #ffffff; }
+.modal-title .text-dark {
+    color: #03070d !important;
+}
 
 /*---Dark skin---*/
 body.dark-skin {
@@ -680,13 +550,13 @@ body.dark-skin {
   background-color: #1b3a70; }
 .dark-skin .grid-stack-item-content {
   background-color: #1b3a70;
-  color: #b5b5c3; }
+  color: #fff; }
 .dark-skin .sweet-alert {
-  background-color: #1b3a70; }
+  background-color: #fff; }
   .dark-skin .sweet-alert h2 {
-    color: #b5b5c3; }
+    color: #1b3a70; }
   .dark-skin .sweet-alert p {
-    color: #b5b5c3; }
+    color: #1b3a70; }
   .dark-skin .sweet-alert .sa-icon.sa-success:before, .dark-skin .sweet-alert .sa-icon.sa-success:after {
     background-color: #1b3a70; }
   .dark-skin .sweet-alert .sa-icon.sa-success .sa-fix {
@@ -903,7 +773,7 @@ body.dark-skin {
 .dark-skin .text-muted {
   color: #566f9e !important; }
 .dark-skin .bg-light {
-  background-color: #0e1e3a !important; }
+  background-color: #0e1e3a ; }
 .dark-skin .bg-lighter {
   background-color: #112547 !important; }
 .dark-skin .bg-lightest {
@@ -954,3 +824,7 @@ body.dark-skin {
   color: #ffffff; }
 
 /*# sourceMappingURL=skin_color.css.map */
+
+.modal .dark-skin .bg-light{
+  background-color : #e9eff7 !important;
+}

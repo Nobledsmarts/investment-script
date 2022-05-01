@@ -75,8 +75,8 @@
             <div class="modal-body">
                 <form class="page-form deposit-form" action="">
                     <div class="form-group icon_form comments_form">
-                        <div class="payment_gateway_wrapper w-100 plan-wrapper">
-                            <select required class="select-plan w-100 form-control bg-light text-dark" name="child_plan_id" id="select-plan">
+                        <div class="payment_gateway_wrapper ww-100 plan-wrapper">
+                            <select required class="select-plan ww-100 form-control bg-light text-dark" name="child_plan_id" id="select-plan">
                                 <option data-display="Select Plan">Select Plan</option>
                                 @foreach ($plans as $plan)
                                 <option data-return="{{ $plan['interest_rate'] }}" 
@@ -90,8 +90,8 @@
                         <input required type="number" class="form-control require bg-light text-dark" name="amount" placeholder="Enter Amount">
                     </div>
                     <div class="form-group icon_form comments_form">
-                        <div class="payment_gateway_wrapper w-100">
-                            <select required class="w-100 form-control bg-light text-dark" name="user_wallet_id">
+                        <div class="payment_gateway_wrapper ww-100">
+                            <select required class="ww-100 form-control bg-light text-dark" name="user_wallet_id">
                                 <option data-display="Select Currency">Select Currency</option>
                                 @foreach ($wallets as $wallet)
                                 <option value="{{ $wallet['id'] }}" data-symbol="{{ $wallet->admin_wallet->currency_symbol }}">{{ $wallet->admin_wallet->currency }}</option>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-dark rounded-btn w-100">
+                        <button type="submit" class="btn btn-dark rounded-btn ww-100">
                             <span class="form-loading d-none px-5">
                                 <i class="fa fa-sync fa-spin"></i>
                             </span>
