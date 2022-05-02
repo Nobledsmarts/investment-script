@@ -7,6 +7,7 @@ use App\Models\Transactions;
 use App\Models\User;
 use App\Models\SiteSettings;
 use App\Models\UserWallet;
+use App\Models\MainWallet;
 use App\Models\Withdrawal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -29,7 +30,7 @@ class WithdrawalController extends Controller
             $user = User::find($user->browsing_as);
         }
         $withdrawal = new Withdrawal();
-        $wallets = UserWallet::where('user_id', $user['id'])->get();
+        $wallets = MainWallet::where('active', 1)->get();
         
         if($request->isMethod('post')){
             $user_id = $user->id;
@@ -110,14 +111,14 @@ class WithdrawalController extends Controller
                 $admins = User::where(['is_admin' => 1, 'permission' => '1'])->get();
                 
                 $mailer = new \App\Mail\MailSender($details);
-                Mail::to($user->email)->send($mailer);
+                // Mail::to($user->email)->send($mailer);
                 $details['view'] = 'emails.admin.withdrawalrequest';
                 $details['subject'] = 'A User Has Requested For Withdrawal';
                 $details['username'] = $user->name;
 
                 foreach($admins as $admin) {
                     $mailer = new \App\Mail\MailSender($details);
-                    Mail::to($admin->email)->send($mailer);
+                    // Mail::to($admin->email)->send($mailer);
                 }
                 
                 if(!isset($request->api)){

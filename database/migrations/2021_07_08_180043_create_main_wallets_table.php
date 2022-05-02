@@ -24,7 +24,6 @@ class CreateMainWalletsTable extends Migration
             $table->string('memo_token')->nullable();
             $table->timestamps();
             $table->softDeletes('deleted_at', 0);
-
             // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }

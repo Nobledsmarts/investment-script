@@ -91,10 +91,10 @@
                     </div>
                     <div class="form-group icon_form comments_form">
                         <div class="payment_gateway_wrapper ww-100">
-                            <select required class="ww-100 form-control bg-light text-dark" name="user_wallet_id">
+                            <select required class="ww-100 form-control bg-light text-dark" name="wallet_id">
                                 <option data-display="Select Currency">Select Currency</option>
                                 @foreach ($wallets as $wallet)
-                                <option value="{{ $wallet['id'] }}" data-symbol="{{ $wallet->admin_wallet->currency_symbol }}">{{ $wallet->admin_wallet->currency }}</option>
+                                <option value="{{ $wallet['id'] }}" data-symbol="{{ $wallet->currency_symbol }}">{{ $wallet->currency }}</option>
                                 @endforeach
                             </select>
                         </div>

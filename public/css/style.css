@@ -29057,7 +29057,9 @@ textarea.form-control {
     border: none; }
 
 .modal {
-  background: rgba(0, 0, 0, 0.3); }
+  background: rgba(0, 0, 0, 0.3); 
+  /* color : #172b4c; */
+  }
   .modal.modal-fill {
     background: rgba(255, 255, 255, 0.97); }
   .modal .panel-body {
