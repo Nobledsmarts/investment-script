@@ -146,7 +146,7 @@
                             <a href="/" class="fxt-logo" >
                                 <center>
                                     <img style="max-width: 100%; width: 250px"
-                                src="{{ asset('visitor/site-images/site_logo/logo1/bg-rmv1.png') }}" alt="Logo">
+                                src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" alt="Logo">
                                 </center>
                             </a>
                                 <br>

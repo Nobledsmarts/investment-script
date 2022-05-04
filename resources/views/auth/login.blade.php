@@ -38,7 +38,7 @@
                 <div class="col-lg-3">
                     <div class="fxt-header">
                         <a href="#" class="fxt-logo"><img style="height: 100px;
-    object-fit: contain;" src="{{ asset('visitor/site-images/site_logo/bg-rmv.png') }}" alt="Logo"></a>
+    object-fit: contain;" src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" alt="Logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
