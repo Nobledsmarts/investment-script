@@ -31,8 +31,8 @@
 
                         <div id="logo">
                             <a href="/">
-                                <span class="logo-default"><img src="{{ asset('visitor/site-images/site_logo/logo1/bg-rmv1.png') }}" /></span>
-                                <span class="logo-dark"><img src="{{ asset('visitor/site-images/site_logo/bg-rmv.png') }}" /></span>
+                                <span class="logo-default"><img src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" /></span>
+                                <span class="logo-dark"><img src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" /></span>
                             </a>
                         </div>
 
@@ -60,9 +60,9 @@
                                                 <!-- <li><a href="cannabis-investment-account.php">Cannabis</a></li> -->
                                                 <li><a href="/cryptocurrency-investments">Cryptocurrency</a></li>
                                                 <!-- <li><a href="property-investment.php">Real Estate</a></li> -->
-                                                <li><a href="/retirement-and-pension">Pension Funds</a></li>
+                                                <li><a href="/retirement-and-pension" style="display: none">Pension Funds</a></li>
                                                 <!-- <li><a href="nfp.php">NFP</a></li> -->
-                                                <li><a href="/pamm-and-mam-account">FOREX (PAMM/MAM)</a></li>
+                                                <li><a href="/pamm-and-mam-account" style="display: none">FOREX (PAMM/MAM)</a></li>
                                             </ul>
                                         </li>
 

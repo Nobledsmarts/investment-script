@@ -198,24 +198,24 @@
         </div>
         <div class="col-lg-6 m-b-30" data-animate="fadeInLeft">
             <div class="carousel yuwnk7826stef" data-items="1">
-                <a target="_blank" href="{{ asset('visitor/site-images/compressed-assets/image-0-compressed.jpg') }}"
+                <a target="_blank" href="{{ asset('visitor/site-images/new/wall.png') }}"
                     data-lightbox="gallery-image" title="Your image title here!"><img
-                        src="{{ asset('visitor/site-images/compressed-assets/image-0-compressed.jpg') }}" alt=""></a>
+                        src="{{ asset('visitor/site-images/new/wall.png') }}" alt=""></a>
 
                 <a target="_blank" href="{{ asset('visitor/site-images/BMO_CS_TradingFloor.jpg') }}"
                     data-lightbox="gallery-image" title="Your image title here!"><img
                         src="{{ asset('visitor/site-images/BMO_CS_TradingFloor.jpg') }}" alt=""></a>
 
-                <a target="_blank" href="{{ asset('visitor/site-images/compressed-assets/image-1-compressed.jpg') }}"
+                <a target="_blank" href="{{ asset('visitor/site-images/new/img001.png') }}"
                     data-lightbox="gallery-image" title="Your image title here!"><img
-                        src="{{ asset('visitor/site-images/compressed-assets/image-1-compressed.jpg') }}" alt=""></a>
+                        src="{{ asset('visitor/site-images/new/img001.png') }}" alt=""></a>
 
                 <a target="_blank" href="{{ asset('visitor/site-images/WhatWeDoPeople2x.jpg') }}" data-lightbox="gallery-image"
                     title="Your image title here!"><img src="{{ asset('visitor/site-images/WhatWeDoPeople2x.jpg') }}" alt=""></a>
 
-                <a target="_blank" href="{{ asset('visitor/site-images/compressed-assets/image-5-compressed.jpg') }}"
+                <a target="_blank" href="{{ asset('visitor/site-images/new/img003.png') }}"
                     data-lightbox="gallery-image" title="Your image title here!"><img
-                        src="{{ asset('visitor/site-images/compressed-assets/image-5-compressed.jpg') }}" alt=""></a>
+                        src="{{ asset('visitor/site-images/new/img003.png') }}" alt=""></a>
 
 
                 <a target="_blank" href="{{ asset('visitor/site-images/team1.jpg') }}" data-lightbox="gallery-image"
@@ -282,7 +282,7 @@ object-fit: cover !important;
 
         <div class="col-lg-4">
             <img alt="" style="width: 100% !important;"
-                src="{{ asset('visitor/site-images/compressed-assets/image-4-compressed.jpg') }}">
+                src="{{ asset('visitor/site-images/new/img002.png') }}">
         </div>
     </div>
 
@@ -607,7 +607,7 @@ border-bottom: 1px solid #01123c !important;
     <div class="uk-grid">
         <div class="uk-width-1-1">
             <div class="uk-card uk-card-secondary uk-background-center-right uk-background-contain uk-background-image@m"
-                style="background-image: url({{ asset('visitor/site-images/compressed-assets/image-6-compressed.jpg') }});">
+                style="background-image: url({{ asset('visitor/site-images/new/img003.png') }});">
                 <!-- {{ asset('visitor/img/monee-content-image7.jpg') }} -->
                 <div class="uk-card-body">
                     <div class="uk-grid">

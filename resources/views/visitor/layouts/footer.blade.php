@@ -39,7 +39,7 @@
 
                         <div class="col-lg-5 col-lg-2 col-md-12">
                             <p><a href="#"><img style="height: 100px; width: 100%; object-fit: cover"
-                                        src="{{ asset('visitor/site-images/site_logo/cover.png') }}" alt="logo"></a></p>
+                                        src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" alt="logo"></a></p>
                             <p> {{ env('SITE_NAME_SHORT') }} Investment Funds is dedicated to helping investors around the world reach
                                 their desired investment goals and broaden their financial horizons.
                                 <br><br>
