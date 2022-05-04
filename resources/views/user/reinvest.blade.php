@@ -2,32 +2,39 @@
         <div id="main-wrapper">
             @include('user.layouts.navigation')
             @include('user.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">Reinvest</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                    <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Reinvest</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">User</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Reinvest</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
-                            <li class="breadcrumb-item active">Reinvest</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-12 col-md-8">
-                            @include('user.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row my-2 p-l-15 p-r-15">
-                                        <div class="col-4">
-                                            <!-- <h5 class="text-bold-600 mb-0">Balance</h5> --></div>
-                                        <div class="col-8 text-right">
-                                            <p class="text-muted mb-0">USD Balance: ${{ $user['deposit_balance'] }}</p>
-                                        </div>
+                    <!-- Main content -->
+                    <section class="content">			
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-12 col-md-8">
+                                @include('admin.layouts.errors')
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h4 class="box-title">
+                                            USD Balance: ${{ number_format($user['deposit_balance'], 2) }}
+                                        </h4>
                                     </div>
+                                    <div class="box-body">
+                                        
                                     <form class="form form-horizontal" enctype="multipart/form-data" method="post">
                                         @csrf
                                         <div class="form-body">
@@ -56,37 +63,28 @@
                                                     <select class="form-control" name="user_wallet_id" id="select-plan">
                                                         <option data-display="Select Currency">Select Currency</option>
                                                         @foreach ($wallets as $wallet)
-                                                        <option value="{{ $wallet['id'] }}" data-symbol="{{ $wallet->admin_wallet->currency_symbol }}">{{ $wallet->admin_wallet->currency }}</option>
+                                                        <option value="{{ $wallet['id'] }}" data-symbol="{{ $wallet->currency_symbol }}">{{ $wallet->currency }}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-actions pb-0 m-l-15 m-r-15">
-                                                <button type="submit" class="btn round btn-dark btn-block btn-glow"> Reinvest </button>
+                                                <button type="submit" class="btn round btn-primary ww-100 btn-block btn-glow"> Reinvest </button>
                                             </div>
                                         </div>
                                     </form>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-2"></div>
                         </div>
-                        <div class="col-2"></div>
-                    </div>
-                </div>
-                @include('user.layouts.footer')
-            </div>
+
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
+  @include('user.layouts.footer')
         @include('user.layouts.general-scripts')
-        <script src="www.amcharts.com/lib/3/amcharts.js"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js') }}"></script>
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
-        <script src="{{  asset('assets/js/fn.js') }}"></script>
-        <script src="{{  asset('assets/js/main.js') }}"></script>
-        <script src="{{  asset('assets/js/admin.faqs.js') }}"></script>
+       
     </body>
 </html>

@@ -7,13 +7,13 @@
                     <div class="content-header">
                         <div class="d-flex align-items-center">
                             <div class="me-auto">
-                                <h4 class="page-title">Withdrawal</h4>
+                                <h4 class="page-title">Reinvest</h4>
                                 <div class="d-inline-block align-items-center">
                                     <nav>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
                                             <li class="breadcrumb-item" aria-current="page">User</li>
-                                            <li class="breadcrumb-item active" aria-current="page">Withdrawal</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Reinvest</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -27,8 +27,8 @@
                             <div class="col-2"></div>
                             <div class="col-12 col-md-8">
                                 @include('admin.layouts.errors')
-                                <div class="card">
-                                    <div class="card-body">
+                                <div class="box">
+                                    <div class="box-body">
                                         <div class="row my-2 p-l-15 p-r-15">
                                             <div class="col-4">
                                                 <!-- <h5 class="text-bold-600 mb-0">Balance</h5> --></div>
