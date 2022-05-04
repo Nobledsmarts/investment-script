@@ -17,31 +17,38 @@ class LoginController extends Controller {
             $user = User::where('email', $login)->orWhere('name', $login)->first();
 
             if(!$user) {
-                $request->session()->flash('error', 'User not found');
-                return back()->withInput();
+                return response()->json([
+                    'error' => ['message' => ['User not found']]
+                ], 400);
                 
             } else {
                 if(!password_verify($password, $user->password)) {
-                    $request->session()->flash('error', 'Password is incorrect');
-                    return back()->withInput();
+                    return response()->json([
+                        'error' => ['message' => ['Password is incorrect']]
+                    ], 400);
+                    // $request->session()->flash('error', 'Password is incorrect');
+                    // return back()->withInput();
                     
                 } else {
                     if(!$user->email_verified_at) {
-                        $request->session()->flash('error', 'Account not verified');
-                        return back()->withInput();
+                        return response()->json([
+                            'error' => ['message' => ['Account not verified']]
+                        ], 400);
                         
                     }
                     
                     if($user->suspended) {
-                        $request->session()->flash('error', 'Account suspended, please contact the live support.');
-                        return back()->withInput();
+                        return response()->json([
+                            'error' => ['message' => ['Account suspended, please contact the live support.']]
+                        ], 400);
                     
                     }
                     Auth::login($user);
                     return redirect('/user');
                 }
-                $request->session()->flash('error', 'Something went wrong, we are working on it');
-                return back()->withInput();
+                return response()->json([
+                    'error' => ['message' => ['Something went wrong, we are working on it']]
+                ], 400);
                 
             }
         } else {

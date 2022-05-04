@@ -1,29 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Skylife Investment Funds | Create New Account</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.html">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('auth/css/bootstrap.min.css') }}">
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="{{ asset('auth/css/fontawesome-all.min.css') }}">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="{{ asset('auth/font/flaticon.css') }}">
-    <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('style.css') }}">
-
-    <!-- jquery-->
-    <script src="{{ asset('auth/js/jquery-3.5.0.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('sweetalert2/dist/sweetalert2.min.css') }}">
-</head>
+@include('auth.layouts.head')
     <!-- select css -->
     <link href="{{ asset('visitor/cdn.jsdelivr.net/npm/select2%404.1.0-beta.1/dist/css/select2.min.css') }}" rel="stylesheet" />
     <script src="{{ asset('visitor/cdn.jsdelivr.net/npm/select2%404.1.0-beta.1/dist/js/select2.min.js') }}"></script>
@@ -168,7 +143,7 @@
                 <div class="col-md-6 col-12 fxt-bg-color yeyyue ytrwiklwk">
                     <div class="fxt-content">
                         <div class="fxt-form">
-                            <a href="../../index-2.html" class="fxt-logo" >
+                            <a href="/" class="fxt-logo" >
                                 <center>
                                     <img style="max-width: 100%; width: 250px"
                                 src="{{ asset('visitor/site-images/site_logo/logo1/bg-rmv1.png') }}" alt="Logo">
