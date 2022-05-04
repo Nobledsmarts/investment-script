@@ -2,9 +2,6 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-
-<!-- Mirrored from skylifeinvestmentfunds.com/secured/auth/create-new-account.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Apr 2022 21:45:55 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,18 +11,18 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.html">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('auth/css/bootstrap.min.css') }}">
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="{{ asset('auth/css/fontawesome-all.min.css') }}">
     <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="font/flaticon.css">
+    <link rel="stylesheet" href="{{ asset('auth/font/flaticon.css') }}">
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
 
     <!-- jquery-->
-    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="{{ asset('auth/js/jquery-3.5.0.min.js') }}"></script>
     <link rel="stylesheet" href="../sweetalert2/dist/sweetalert2.min.css">
 </head>
     <!-- select css -->
@@ -984,10 +981,4 @@
 
 
 </body>
-
-
-
-<!--   -->
-
-<!-- Mirrored from skylifeinvestmentfunds.com/secured/auth/create-new-account.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Apr 2022 21:46:01 GMT -->
 </html>

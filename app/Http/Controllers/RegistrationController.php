@@ -28,8 +28,6 @@ class RegistrationController extends Controller {
                 'email' => 'required|unique:users,email,except,id|email:filter', 
                 'username' => 'required|alpha_num|unique:users,name,except,id',
                 'password' => 'required|min:6',
-                'repassword' => 'required|same:password',
-                'terms' => 'required'
             ]);
 
             $referrer = User::where('uid', $request->uid)->first();
@@ -92,8 +90,11 @@ class RegistrationController extends Controller {
                 $mailer = new \App\Mail\MailSender($details);
                 try {
                     Mail::to($validated['email'])->send($mailer);
-                    $request->session()->flash('success', 'Account created successfully, please check the mail sent to the provided email address for verification, after ten minutes the email will expire.');
-                    return back();
+                    return response()->json([
+                        'success' => ['message' => ['Account created successfully, please check the mail sent to the provided email address for verification, after ten minutes the email will expire.']]
+                    ], 200);
+                    // $request->session()->flash('success', 'Account created successfully, please check the mail sent to the provided email address for verification, after ten minutes the email will expire.');
+                    // return back();
                 } catch(\Exception $e){
                    $request->session()->flash('error', 'Unable to send verification mail. Please contact support');
                    return back()->withInput();

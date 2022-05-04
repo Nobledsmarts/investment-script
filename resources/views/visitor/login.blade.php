@@ -1,10 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-
-
-<!-- Mirrored from skylifeinvestmentfunds.com/secured/auth/account-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Apr 2022 21:45:34 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -205,10 +200,4 @@
 </script>
 
 </body>
-
-
-
-<!--   -->
-
-<!-- Mirrored from skylifeinvestmentfunds.com/secured/auth/account-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Apr 2022 21:45:55 GMT -->
 </html>
