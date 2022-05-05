@@ -13,9 +13,9 @@
     <![endif]-->
     <section class="fxt-template-animation fxt-template-layout6" style="background-image:
     linear-gradient(45deg, #012c6aa1 100%, #012c6ae6 100%),
-    url(15017-compressed.jpg) !important">
+    url({{ asset('auth/15017-compressed.jpg') }}) !important">
         <div class="fxt-header">
-            <a href="/" style="width: 250px;" class="fxt-logo"><img src="{{ asset('site-images/site_logo/bg-rmv.png') }}"
+            <a href="/" style="width: 250px;" class="fxt-logo"><img src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}"
                     alt="Logo"></a>
         </div>
         <div class="fxt-content">
@@ -83,7 +83,7 @@
                                             $("#reset_submit").on('click', function(event){
                                                     event.preventDefault();
                                                 var reset_email = $('#reset_email').val();
-                                                var url = "../inc/process_reset_ajax.html";
+                                                var url = "/forgot-pass";
           
                                                 if(!reset_email ){           
                                                     Swal.fire(
@@ -93,33 +93,35 @@
                                                     )
                                                     return false;
                                                 }else{
+                                                    $.ajaxSetup({
+                                                        headers: {
+                                                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                                        }
+                                                    });
                                                    $.ajax({
                                                    type: "POST",
                                                    url : url,
-                                                   data: {reset_email : reset_email },
+                                                   data: {email : reset_email },
                                                    success: function(data, request, settings){
-                                                   // alert(data);
-
-                                                    if(data == 1 ){
-                                                        Swal.fire(
+                                                    Swal.fire(
                                                        'Success',
                                                        'Your request was successful. Please Check your email to continue.',
                                                        'success'
                                                         )
-                                                    }else{
-                                                        Swal.fire(
-                                                       'Error',
-                                                       data,
-                                                       'error'
-                                                        )
-                                                    }
                                                    
                                                    $('#loaderIcon7').hide();
                                                    $('#reset_email').val("");
                                                               
                                                 },
+                                                error: function(err) {
+                                                    Swal.fire(
+                                                       'Error',
+                                                       err.responseJSON.error.message[0],
+                                                       'error'
+                                                        )
+                                                },
                                                 beforeSend: function(data, request, settings){
-                                                  $('#loaderIcon7').html('<img src="../ajaxloader/ajax-loader3.gif"/>');
+                                                  $('#loaderIcon7').html('<img src="{{ asset(`auth/ajaxloader/ajax-loader3.gif`) }}"/>');
                                                 },
   
                                                 });

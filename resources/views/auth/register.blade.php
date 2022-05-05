@@ -450,7 +450,11 @@
                         $('#previewImage').prop("src", "vippng.com-empty-circle-png-4161690.png");
                     },
                     error: function(err) {
-                        console.log(err)
+                        Swal.fire(
+                            'Error',
+                            err.responseJSON.error.message[0],
+                            'error'
+                        )
                     },
                     beforeSend: function(data, request, settings){
                         $('#loaderIcon6').html('<img src="{{ asset(`auth/ajaxloader/ajax-loader3.gif`) }}"/>');

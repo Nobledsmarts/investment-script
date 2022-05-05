@@ -96,12 +96,14 @@ class RegistrationController extends Controller {
                     // $request->session()->flash('success', 'Account created successfully, please check the mail sent to the provided email address for verification, after ten minutes the email will expire.');
                     // return back();
                 } catch(\Exception $e){
-                   $request->session()->flash('error', 'Unable to send verification mail. Please contact support');
-                   return back()->withInput();
+                    return response()->json([
+                        'error' => ['message' => ['Unable to send verification mail. Please contact support.']]
+                    ], 401);
                 }
             } else {
-                $request->session()->flash('error', 'Error registering account');
-                return back()->withInput();
+                return response()->json([
+                    'error' => ['message' => ['Error registering account.']]
+                ], 401);
             }
         } else {
             return view('auth.register', compact('page_title'));

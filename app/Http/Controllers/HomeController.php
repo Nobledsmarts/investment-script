@@ -628,8 +628,9 @@ class HomeController extends Controller {
             $token =  rand(100000, 999999);
             $user = User::where('email', $request->email)->first();
             if(!$user) {
-                $request->session()->flash('error', "$request->email is not a registered email");
-                return back();
+                return response()->json([
+                    'error' => ['message' => ["$request->email is not a registered email"]]
+                ], 401);
             }
             // send email
             $details = [
@@ -645,10 +646,13 @@ class HomeController extends Controller {
         
                 session(['verification_token' => $token]);
                 session(['email' => $request->email]);
-                return redirect('/verify-token')->with('success', 'Verification code successfully sent');
+                return response()->json([
+                    'success' => ['message' => ["Verification code successfully sent"]]
+                ], 200);
             } catch(\Exception $e){
-                $request->session()->flash('error', "Unable to send verification token to $request->email");
-                return back();
+                return response()->json([
+                    'error' => ['message' => ["Unable to send verification token to $request->email"]]
+                ], 401);
             }
         }
         return view('auth.forgotpass', compact('page_title', 'settings', 'main_wallets'));
