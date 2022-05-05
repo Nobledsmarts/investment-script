@@ -651,7 +651,7 @@ class HomeController extends Controller {
                 return back();
             }
         }
-        return view('visitor.forgotpass', compact('page_title', 'settings', 'main_wallets'));
+        return view('auth.forgotpass', compact('page_title', 'settings', 'main_wallets'));
     }
     public function changePass(Request $request){
         $page_title = env('SITE_NAME') . " Investment Website | Change Password";
@@ -702,22 +702,24 @@ class HomeController extends Controller {
         SiteSettings::where('id', 1)->increment('visit_count', 1);
         $settings = SiteSettings::latest()->first();
         $main_wallets = MainWallet::all();
-        if(!session('email')) return redirect('/login');
+        // if(!session('email')) return redirect('/login');
         if($request->isMethod('post')){
             $token = session('verification_token');
             $email = session('email');
 
             if($request->token != $token) {
-                $request->session()->flash('error', "invalid code or expired code");
-                return back();
+                return response()->json([
+                    'error' => ['message' => ['Invalid code or expired code.']]
+                ], 401);
             } elseif($request->email != $email){
-                $request->session()->flash('error', "invalid email address");
-                return back();
+                return response()->json([
+                    'error' => ['message' => ['Invalid email address.']]
+                ], 401);
             } else {
                 return redirect('/change-pass')->with('success', 'Token Verified');
             }
         } else {
-            return view('visitor.verify-token', compact('page_title', 'settings', 'main_wallets'));
+            return view('auth.verify-token', compact('page_title', 'settings', 'main_wallets'));
         }
     }
 }
