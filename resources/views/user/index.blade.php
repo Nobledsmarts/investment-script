@@ -239,9 +239,30 @@
                                                     <th>Amount</th>
                                                     <th>Currency</th>
                                                     <th>Type</th>
+                                                    <th>Date</th>
                                                 </tr>
                                             </thead>
-                                            <tbody></tbody>				  
+                                            <tbody>
+                                                @foreach($transactions as $transaction)
+                                                <tr>
+                                                    <td>
+                                                        {{ $transaction->transaction_hash }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $transaction->amount }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $transaction->currency }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $transaction->type }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $transaction->created_at }}
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>			  
                                         </table>
                                         </div>              
                                     </div>

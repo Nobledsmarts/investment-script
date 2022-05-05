@@ -141,7 +141,7 @@ class DepositController extends Controller {
             $user = User::find($user->browsing_as);
         }
         $plans = ChildInvestmentPlan::all();
-
+        $wallets = MainWallet::where('active', 1)->get();
         if($request->isMethod('post')){
             $validated = $request->validate([
                 'child_plan_id' => 'required', 

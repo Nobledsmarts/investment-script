@@ -1,10 +1,18 @@
 
   <header class="main-header">
 	<div class="d-flex align-items-center logo-box justify-content-start">	
-		<!-- Logo -->
 		<a href="/user" class="logo">
-		  <b>NETCAPITALGLOBE</b>
+		 
+		  <div class="logo-lg">
+			  <span class="light-logo"><img src="{{ asset('images/netcapital-logo.png') }}" alt="logo"></span>
+			  <span class="dark-logo"><img src="{{ asset('images/netcapital-logo.png') }}" style="height:45px" alt="logo"></span>
+		  </div>
 		</a>	
+		<!-- Logo
+		<a href="/user" class="logo">
+			<img src="{{ asset('images/logo netcapital.png') }}">
+		<b>NETCAPITALGLOBE</b> 
+		</a>	 -->
 	</div>  
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top">

@@ -396,7 +396,9 @@ body.dark-skin {
 .dark-skin .input-group-text {
   border-color: rgba(255, 255, 255, 0.12);
   color: #b5b5c3;
-  background-color: #1b3a70; }
+  background-color: #1b3a70; 
+  border : none;
+  }
 .dark-skin .direct-chat-text p {
   background: #1b3a70;
   color: #cad9f2; }

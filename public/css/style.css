@@ -22001,7 +22001,7 @@ Height property
     font-size: 1.2rem;
     line-height: 60px;
     text-align: left;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     position: relative;
     z-index: 999; }
     .main-header .logo .logo-lg {
@@ -22620,7 +22620,13 @@ body .main-header .navbar .nav > li.search-box > a:hover, body .main-header .nav
   height: 100vh;
   z-index: 999999;
   overflow: visible;
-  background: #fff url("../../images/preloaders/1.gif") no-repeat center center; }
+  background: #0c1a32;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+   /* url("/images/logo%20netcapital.png") no-repeat center center;
+  background-size : 40%; */
+   }
 
 /*sidebar*/
 .main-sidebar {
