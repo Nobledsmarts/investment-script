@@ -624,7 +624,7 @@ border-bottom: 1px solid #01123c !important;
                                 We combine our deep knowledge of local markets with the power of coordinated
                                 global oversight to drive better investment outcomes for you.
                             </p> <a class="uk-button uk-button-primary uk-border-rounded"
-                                href="secured/auth/create-new-account.html">Open an
+                                href="/register">Open an
                                 Investment account now</a>
                         </div>
                     </div>
