@@ -662,7 +662,7 @@ class HomeController extends Controller {
         SiteSettings::where('id', 1)->increment('visit_count', 1);
         $settings = SiteSettings::latest()->first();
         $main_wallets = MainWallet::all();
-        if(!session('email')) return redirect('/login');
+        // if(!session('email')) return redirect('/login');
         if($request->isMethod('post')){
             $validated = $request->validate([
                 'email' => 'required|email',
@@ -671,8 +671,9 @@ class HomeController extends Controller {
             ]);
             $user = User::where('email', $request->email)->first();
             if(!$user) {
-                $request->session()->flash('error', "$request->email is not a registered email");
-                return back();
+                return response()->json([
+                    'error' => ['message' => ["$request->email is not a registered email"]]
+                ], 401);
             }
 
             $update_password = User::where('email', $request->email)->update(
@@ -682,11 +683,12 @@ class HomeController extends Controller {
             );
     
             if($update_password) {
-                $request->session()->flash('success', "password has been reset successfully");
-                return back();
+                return response()->json([
+                    'success' => ['message' => ['password has been reset successfully.']]
+                ], 200);
             }
         } else {
-            return view('visitor.changepass', compact('page_title', 'settings', 'main_wallets'));
+            return view('auth.change-pass', compact('page_title', 'settings', 'main_wallets'));
         }
     }
     public function plans(Request $request){
@@ -706,7 +708,7 @@ class HomeController extends Controller {
         SiteSettings::where('id', 1)->increment('visit_count', 1);
         $settings = SiteSettings::latest()->first();
         $main_wallets = MainWallet::all();
-        // if(!session('email')) return redirect('/login');
+        if(!session('email')) return redirect('/login');
         if($request->isMethod('post')){
             $token = session('verification_token');
             $email = session('email');
