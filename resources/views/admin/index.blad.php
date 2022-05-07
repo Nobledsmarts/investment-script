@@ -2,30 +2,24 @@
         <div id="main-wrapper">
             @include('admin.layouts.navigation')
             @include('admin.layouts.sidebar')
-            <div class="content-wrapper">
-                <div class="container-full">
-                     <div class="content-header">
-                        <div class="d-flex align-items-center">
-                            <div class="me-auto">
-                                <h4 class="page-title">Home</h4>
-                                <div class="d-inline-block align-items-center">
-                                    <nav>
-                                        <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-                                            <li class="breadcrumb-item" aria-current="page">Admin</li>
-                                            <li class="breadcrumb-item active" aria-current="page">Home</li>
-                                        </ol>
-                                    </nav>
-                                </div>
-                            </div>
-                            
-                        </div>
+            <div class="page-wrapper">
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-light">Dashboard</h3>
                     </div>
-                    <!-- Main content -->
-                    <section class="content">			
-                        <div class="row">
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    @include('admin.layouts.errors')
+                    <div class="row">
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-user f-s-40 color-primary"></i></span>
@@ -38,7 +32,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-server f-s-40 color-success"></i></span>
@@ -51,7 +45,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-server f-s-40 color-warning"></i></span>
@@ -64,7 +58,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-stats-up f-s-40 color-danger"></i></span>
@@ -77,7 +71,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-server f-s-40 color-danger"></i></span>
@@ -90,7 +84,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-bar-chart f-s-40 color-danger"></i></span>
@@ -103,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-briefcase f-s-40 color-info"></i></span>
@@ -116,7 +110,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="box p-30">
+                            <div class="card p-30">
                                 <div class="media">
                                     <div class="media-left meida media-middle">
                                         <span><i class="ti-bar-chart f-s-40 color-success"></i></span>
@@ -131,11 +125,11 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="box">
-                                <div class="box-header">
-                                    <h4 class="box-title">News Letter</h4>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">News Letter</h4>
                                 </div>
-                                <div class="box-body">
+                                <div class="card-body">
                                     <form class="form p-t-20 p-5" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
@@ -158,19 +152,29 @@
                                             <textarea name="message" rows="10" style="width:100%"></textarea>
                                         </div>
                                         <div class="text-left">
-                                            <button type="submit" class="btn btn-primary btn-block waves-effect waves-light ww-100 m-r-10">Submit</button>
+                                            <button type="submit" class="btn btn-dark btn-block waves-effect waves-light m-r-10">Submit</button>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-		            </section>
-		<!-- /.content -->
-	            </div>
+                </div>
+                @include('admin.layouts.footer')
+            </div>
         </div>
-  @include('admin.layouts.footer')
         @include('admin.layouts.general-scripts')
+        <script src="www.amcharts.com/lib/3/amcharts.js"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js') }}"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js') }}"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js') }}"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js') }}"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js') }}"></script>
+        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js') }}"></script>
+        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
+        <script src="{{  asset('assets/js/fn.js') }}"></script>
+        <script src="{{  asset('assets/js/main.js') }}"></script>
+        <script src="{{  asset('assets/js/admin.pending-deposits.js') }}"></script>
     </body>
 </html>

@@ -14,6 +14,9 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
+					  @if($user->is_admin)
+					<li><a href="/admin"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Admin Dashboard</a></li>
+					  @endif
 					<li><a href="/user"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Overview</a></li>
 				  </ul>
 				</li>
