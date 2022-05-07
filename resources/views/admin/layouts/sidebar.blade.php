@@ -30,9 +30,9 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/user/deposit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pending Deposits</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Denied Deposits</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Approved Deposits</a></li>
+					<li><a href="/admin/deposits/pending"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pending Deposits</a></li>
+					<li><a href="/admin/deposits/denied"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Denied Deposits</a></li>
+					<li><a href="/admin/deposits/approved"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Approved Deposits</a></li>
 
 				  </ul>
 				</li>
@@ -47,9 +47,9 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/user/deposit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pending Withdrawals</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Denied Withdrawals</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Approved Withdrawals</a></li>
+					<li><a href="/admin/withdrawals/pending"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pending Withdrawals</a></li>
+					<li><a href="/admin/withdrawals/denied"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Denied Withdrawals</a></li>
+					<li><a href="/admin/withdrawals/approved"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Approved Withdrawals</a></li>
 
 				  </ul>
 				</li>
@@ -64,16 +64,16 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/user/deposit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>All Members</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Suspended Members</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Admins</a></li>
-					<li><a href="/user/deposits"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Moderators</a></li>
+					<li><a href="/admin/members"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>All Members</a></li>
+					<li><a href="/admin/members/suspended"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Suspended Members</a></li>
+					<li><a href="/admin/members/admins"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Admins</a></li>
+					<li><a href="/admin/members/moderators"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Moderators</a></li>
 
 				  </ul>
 				</li>
 
 				<li>
-				  <a href="/user/reinvest">
+				  <a href="/admin/wallets">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/transactions.svg') }}" class="svg-icon" alt="">
 					<span>Wallets</span>
 				  </a>
@@ -90,13 +90,13 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/user/withdrawal"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Parent</a></li>
-					<li><a href="/user/withdrawals"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Child</a></li>
+					<li><a href="/admin/plans/parent"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Parent</a></li>
+					<li><a href="/admin/plans/child"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Child</a></li>
 				  </ul>
 				</li>
 				<li class="header">Actions</li>
 				<li>
-				  <a href="/user/reinvest">
+				  <a href="/admin/reviews">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/transactions.svg') }}" class="svg-icon" alt="">
 					<span>Reviews</span>
 				  </a>
@@ -110,8 +110,8 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/user/withdrawal"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Credit</a></li>
-					<li><a href="/user/withdrawals"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Debit</a></li>
+					<li><a href="/admin/fund/confirm-credit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Credit</a></li>
+					<li><a href="/admin/fund/confirm-debit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Debit</a></li>
 				  </ul>
 				</li>
 				<li class="treeview">
@@ -123,12 +123,12 @@
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="/user/withdrawal"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Credit</a></li>
-					<li><a href="/user/withdrawals"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Debit</a></li>
+					<li><a href="/admin/fund/ci/confirm-credit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Credit</a></li>
+					<li><a href="/admin/fund/ci/confirm-debit"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Debit</a></li>
 				  </ul>
 				</li>
 				<li>
-				  <a href="/user/reinvest">
+				  <a href="/admin/quick-withdrawal">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/transactions.svg') }}" class="svg-icon" alt="">
 					<span>Quick Withdrawal</span>
 				  </a>
@@ -137,31 +137,31 @@
 				<li class="header">MANAGE</li>
 
                 <li>
-				  <a href="/user/referrals">
+				  <a href="/admin/manage/wallet-balance">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
 					<span>Wallet Balance</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/referrals">
+				  <a href="/admin/manage/current-invested">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
 					<span>Currently Invested</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/referrals">
+				  <a href="/admin/manage/referral-bonus">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
 					<span>Referral Bonus</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/referrals">
+				  <a href="/admin/manage/deposit-interest">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
 					<span>Deposit Interest</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/referrals">
+				  <a href="/admin/manage/total-withdrawn">
 					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
 					<span>Total Withdrawn</span>
 				  </a>
@@ -169,43 +169,43 @@
 	
 				<li class="header">PAGES</li>
                 <li>
-				  <a href="/user/profile">
+				  <a href="/admin/pages/faqs">
 					<img src="{{ asset('images/svg-icon/user.svg') }}" class="svg-icon" alt="">
 					<span>FAQS</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/security">
+				  <a href="/admin/pages/about">
 					<img src="{{ asset('images/svg-icon/settings.svg') }}" class="svg-icon" alt="">
 					<span>About</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/logout">
+				  <a href="/admin/pages/how-it-works">
 					<img src="{{ asset('images/svg-icon/authentication.svg') }}" class="svg-icon" alt="">
 					<span>How It Works</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/logout">
+				  <a href="/admin/pages/meet-our-traders">
 					<img src="{{ asset('images/svg-icon/authentication.svg') }}" class="svg-icon" alt="">
 					<span>Meet Our Traders</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/logout">
+				  <a href="/admin/pages/privacy-policy">
 					<img src="{{ asset('images/svg-icon/authentication.svg') }}" class="svg-icon" alt="">
 					<span>Privacy Policy</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/logout">
+				  <a href="/admin/pages/terms">
 					<img src="{{ asset('images/svg-icon/authentication.svg') }}" class="svg-icon" alt="">
 					<span>Terms & Condition</span>
 				  </a>
 				</li>
 				<li>
-				  <a href="/user/logout">
+				  <a href="/admin/logout">
 					<img src="{{ asset('images/svg-icon/authentication.svg') }}" class="svg-icon" alt="">
 					<span>Logout</span>
 				  </a>

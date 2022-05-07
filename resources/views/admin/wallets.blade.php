@@ -2,27 +2,35 @@
         <div id="main-wrapper">
             @include('admin.layouts.navigation')
             @include('admin.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">Wallets</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                    <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Wallets</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Admin</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Wallets</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
-                            <li class="breadcrumb-item active">Wallets</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            @include('admin.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
+                    <!-- Main content -->
+                    <section class="content">			
+                        <div class="row">
+                           
+                            <div class="col-12">
+                                 @include('admin.layouts.errors')
+                                <div class="box">
+                                <div class="box-body">
                                     <div class="d-flex justify-content-between">
-                                        <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                        <h6 class="box-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                         <button class="btn btn-rounded btn-primary add-wallet">Add Wallet</button>
                                     </div>
                                     
@@ -90,62 +98,20 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                            </div>
                     
-                </div>
-                @include('admin.layouts.footer')
-            </div>
+                    
+                        </div>
+
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
-        <div class="modal" id="wallet-modal">
-            <form class="page-form wallet-form" method="post" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <input required type="text" class="form-control require bg-light text-dark" name="currency" placeholder="Enter Currency Name">
-                </div>
-                <div class="form-group">
-                    <input required type="text" class="form-control require bg-light text-dark" name="currency_symbol" placeholder="Enter Currency Symbol">
-                </div>
-                <div class="form-group">
-                    <input required type="text" class="form-control require bg-light text-dark" name="currency_address" placeholder="Enter Currency Address">
-                </div>
-                <label class="text-dark">Has Memo</label>
-                <div class="form-group memo-wrapper">
-                    <select name="has_memo" id="has-memo" class="form-control w-100 has-memo bg-light text-dark">
-                        <option value="0">No</option>
-                        <option value="1">Yes</option>
-                    </select>
-                </div>
-                <div class="memo-cont d-none">
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-light text-dark" name="memo_token" placeholder="Enter Currency Memo Token">
-                    </div>
-                </div>
-                <div>
-                <input type="hidden" class="form-control bg-light text-dark" name="id" value="">
-                <button type="submit" class="btn btn-dark rounded-btn w-100">
-                    <span class="form-loading d-none px-5">
-                        <i class="fa fa-sync fa-spin"></i>
-                    </span>
-                    <span class='submit-text'>
-                        Submit
-                    </span>
-                </button>
-                </div>
-            </form>
-        </div>
+  @include('admin.layouts.footer')
         @include('admin.layouts.general-scripts')
-        <script src="www.amcharts.com/lib/3/amcharts.js"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js') }}"></script>
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
         <script src="{{  asset('assets/js/fn.js') }}"></script>
         <script src="{{  asset('assets/js/main.js') }}"></script>
         <script src="{{  asset('assets/js/admin.wallets.js') }}"></script>
+       
     </body>
 </html>

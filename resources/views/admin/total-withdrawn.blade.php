@@ -2,20 +2,28 @@
         <div id="main-wrapper">
             @include('admin.layouts.navigation')
             @include('admin.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">Total Withdrawn</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                     <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Total Withdrawn</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Admin</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Total Withdrawn</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
-                            <li class="breadcrumb-item active">Total Withdrawn</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
+                    <!-- Main content -->
+                    <section class="content">			
+                        
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-12 col-md-8">
@@ -47,7 +55,7 @@
                                             </div>
                                         </div>
                                         <div class="text-left">
-                                            <button type="submit" class="btn btn-dark btn-block waves-effect waves-light m-r-10">Submit</button>
+                                            <button type="submit" class="btn btn-primary ww-100 btn-block waves-effect waves-light m-r-10">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -55,14 +63,12 @@
                         </div>
                         <div class="col-2"></div>
                     </div>
-                </div>
-                @include('admin.layouts.footer')
-            </div>
+
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
+  @include('admin.layouts.footer')
         @include('admin.layouts.general-scripts')
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
-        <script src="{{  asset('assets/js/fn.js') }}"></script>
-        <script src="{{  asset('assets/js/main.js') }}"></script>
-        
     </body>
 </html>

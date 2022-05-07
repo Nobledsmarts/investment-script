@@ -26,6 +26,7 @@
                         <div class="row">
                            
                             <div class="col-12">
+                                 @include('admin.layouts.errors')
                                 <div class="box">
                                     <div class="box-header with-border">
                                         <h3 class="box-title">Deposit History</h3>
