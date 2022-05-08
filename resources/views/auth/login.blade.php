@@ -144,8 +144,8 @@
                 url : url,
                 data: {login : general_username, password : general_password },
                 success: function(data, request, settings){
-                    // window.location="/userddddddddddddddddd";
-                    console.log(data)
+                    window.location="/user";
+                    // console.log(data)
 
                 $('#loaderIcon5').hide();
                 $('#general_username').val("");
@@ -153,6 +153,7 @@
                             
             },
             error: function(err) {
+                console.log(err.responseJSON);
                 Swal.fire(
                     'Oh Sorry',
                     err.responseJSON.error.message[0],

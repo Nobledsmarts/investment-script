@@ -2,30 +2,37 @@
         <div id="main-wrapper">
             @include('admin.layouts.navigation')
             @include('admin.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">QuickWithdrawal</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                    <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Quick Withdrawals</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Admin</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Quick Withdrawals</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
-                            <li class="breadcrumb-item active">QuickWithdrawal</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row">
+                    <!-- Main content -->
+                    <section class="content">			
+                       <div class="row">
                         <div class="col-2"></div>
                         <div class="col-12 col-md-8">
                             @include('user.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
+                            <div class="box">
+                                <div class="box-body">
                                     <form class="form p-t-20 p-5" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
-                                            <label for="username">User Name g</label>
+                                            <label for="username">User Name</label>
                                             <div class="input-group">
                                                 <input type="text" name="name" class="form-control" id="username" placeholder="Username">
                                                 <div class="input-group-addon form-addon-icon"><i class="ti-user"></i></div>
@@ -60,7 +67,7 @@
                                             </div>
                                         </div>
                                         <div class="text-left">
-                                            <button type="submit" class="btn btn-dark btn-block waves-effect waves-light m-r-10">Submit</button>
+                                            <button type="submit" class="btn btn-primary ww-100 btn-block waves-effect waves-light m-r-10">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -68,22 +75,15 @@
                         </div>
                         <div class="col-2"></div>
                     </div>
-                </div>
-                @include('admin.layouts.footer')
-            </div>
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
+  @include('admin.layouts.footer')
         @include('admin.layouts.general-scripts')
-        <script src="www.amcharts.com/lib/3/amcharts.js"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js') }}"></script>
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
         <script src="{{  asset('assets/js/fn.js') }}"></script>
         <script src="{{  asset('assets/js/main.js') }}"></script>
         <script src="{{  asset('assets/js/admin.pending-deposits.js') }}"></script>
+       
     </body>
 </html>

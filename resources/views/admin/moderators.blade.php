@@ -2,83 +2,104 @@
         <div id="main-wrapper">
             @include('admin.layouts.navigation')
             @include('admin.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">Moderators</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                    <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Moderators</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Admin</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Moderators</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
-                            <li class="breadcrumb-item active">Moderators</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            @include('admin.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
-                                    <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                    <!-- Main content -->
+                    <section class="content">			
+                        <div class="row">
+                           
+                            <div class="col-12">
+                                 @include('admin.layouts.errors')
+                                <div class="box">
+                                <div class="box-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="box-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                        {{-- <button class="btn btn-rounded btn-primary add-plan">Add Member</button> --}}
+                                    </div>
                                     <div class="table-responsive m-t-10">
                                         <table id="record-table" class="display record-table record-export nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
-                                                    <th class="width_table1">username</th>
-                                                    <th class="width_table1">email</th>
-                                                    <th class="width_table1">firstname</th>
-                                                    <th class="width_table1">middlename</th>
-                                                    <th class="width_table1">lastname</th>
-                                                    <th class="width_table1">invested</th>
-                                                    <th class="width_table1">current invested</th>
-                                                    <th class="width_table1">deposit balance</th>
-                                                    <th class="width_table1">referral bonus</th>
-                                                    <th class="width_table1">total withdrawn</th>
-                                                    <th class="width_table1">Reg Date</th>
-                                                    <th class="width_table1">Actions</th>
+                                                    <th>username</th>
+                                                    <th>is admin</th>
+                                                    <th>email</th>
+                                                    <th>Referred By</th>
+                                                    <th>firstname</th>
+                                                    <th>middlename</th>
+                                                    <th>lastname</th>
+                                                    <th>invested</th>
+                                                    <th>current invested</th>
+                                                    <th>deposit balance</th>
+                                                    <th>referral bonus</th>
+                                                    <th>total withdrawn</th>
+                                                    <th>Reg Date</th>
+                                                    <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($moderators as $site_moderator)
+                                                @foreach($moderators as $site_user)
                                                     <tr class="background_white">
                                                         <td>
-                                                            <h5>{{ $site_moderator['name'] }}</h5>
+                                                            <h5>{{ $site_user['name'] }}</h5>
                                                         </td>
                                                         <td>
-                                                            <h5>{{ $site_moderator['email'] }}</h5>
+                                                            <h5>{{ $site_user['is_admin'] ? 'True' : 'False'}}</h5>
+                                                        </td>
+                                                       
+                                                        <td>
+                                                            <h5>{{ $site_user['email'] }}</h5>
+                                                        </td>
+                                                        
+                                                         <td>
+                                                            <h5>{{ $site_user->referrer }}</h5>
                                                         </td>
                                                         <td>
-                                                            <h5>{{ $site_moderator['firstname'] }}</h5>
+                                                            <h5>{{ $site_user['firstname'] }}</h5>
                                                         </td>
                                                         <td>
-                                                            <h5>{{ $site_moderator['middlename'] }}</h5>
+                                                            <h5>{{ $site_user['middlename'] }}</h5>
                                                         </td>
                                                         <td>
-                                                            <h5>{{ $site_moderator['lastname'] }}</h5>
+                                                            <h5>{{ $site_user['lastname'] }}</h5>
                                                         </td>
                                                         <td>
-                                                            <h5>{{ $site_moderator['invested'] ? 'True' : 'False'}}</h5>
+                                                            <h5>{{ $site_user['invested'] ? 'True' : 'False'}}</h5>
                                                         </td>
                                                         <td>
-                                                            ${{ number_format($site_moderator['currently_invested'], 2) }}
+                                                            ${{ number_format($site_user['currently_invested'], 2) }}
                                                         </td>
                                                         <td>
-                                                            ${{ number_format($site_moderator['deposit_balance'], 2) }}
+                                                            ${{ number_format($site_user['deposit_balance'], 2) }}
                                                         </td>
                                                         <td>
-                                                            ${{ number_format($site_moderator['referral_bonus'], 2) }}
+                                                            ${{ number_format($site_user['referral_bonus'], 2) }}
                                                         </td>
                                                         <td>
-                                                            ${{ number_format($site_moderator['total_withdrawn'], 2) }}
+                                                            ${{ number_format($site_user['total_withdrawn'], 2) }}
                                                         </td>
                                                         <td>
-                                                            {{ $site_moderator['created_at'] }}
+                                                            {{ $site_user['created_at'] }}
                                                         </td>
                                                         <td class="text-center">
                                                             <div class="dropdown">
-                                                                <button class="btn btn-outline-dark" type="button" data-toggle="dropdown">
+                                                                <button class="btn btn-outline-light" type="button" data-bs-toggle="dropdown">
                                                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu">
@@ -128,25 +149,20 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                            </div>
                     
-                </div>
-                @include('admin.layouts.footer')
-            </div>
+                    
+                        </div>
+
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
+  @include('admin.layouts.footer')
         @include('admin.layouts.general-scripts')
-        <script src="www.amcharts.com/lib/3/amcharts.js"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js') }}"></script>
-        <script src="{{  asset('assets/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js') }}"></script>
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
         <script src="{{  asset('assets/js/fn.js') }}"></script>
         <script src="{{  asset('assets/js/main.js') }}"></script>
         <script src="{{  asset('assets/js/admin.pending-deposits.js') }}"></script>
+       
     </body>
 </html>

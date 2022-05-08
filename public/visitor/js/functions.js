@@ -51,10 +51,14 @@ var INSPIRO = {},
     }),
     t(window).bind("breakpoint-change", function (i) {
       t(window).breakpoints("greaterEqualTo", "lg", function () {
+        document.querySelector('span.logo-dark').querySelector('img').src = location.origin + "/images/Hnet.com-imag.png";
         e.addClass("b--desktop"), e.removeClass("b--responsive");
       }),
         t(window).breakpoints("lessThan", "lg", function () {
           e.removeClass("b--desktop"), e.addClass("b--responsive");
+        document.querySelector('span.logo-dark').querySelector('img').src = location.origin + "/visitor/site-images/new/Hnet.com-image.png"
+
+          // http://127.0.0.1:8000/visitor/site-images/new/Hnet.com-image.png
         });
     }),
     (INSPIRO.core = {

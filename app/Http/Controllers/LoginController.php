@@ -44,7 +44,10 @@ class LoginController extends Controller {
                     
                     }
                     Auth::login($user);
-                    return redirect('/user');
+                    return response()->json([
+                            'success' => ['message' => ['Login success']]
+                        ], 200);
+                    // return redirect('/user');
                 }
                 return response()->json([
                     'error' => ['message' => ['Something went wrong, we are working on it']]

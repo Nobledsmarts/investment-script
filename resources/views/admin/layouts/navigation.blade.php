@@ -1,43 +1,74 @@
-<div class="header">
-    <nav class="navbar top-navbar navbar-expand-md navbar-light">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <b>
-                    &nbsp;
-                    <!-- <img src="/assets/images/logo.png" alt="homepage" class="dark-logo" /> -->
-                </b>
 
-                <span>{{ env('SITE_NAME_SHORT') }}</span>
+  <header class="main-header">
+	<div class="d-flex align-items-center logo-box justify-content-start">	
+		<a href="/user" class="logo">
+		 
+		  <div class="logo-lg">
+			  <span class="light-logo"><img src="{{ asset('images/netcapital-logo.png') }}" alt="logo"></span>
+			  <span class="dark-logo"><img src="{{ asset('images/netcapital-logo.png') }}" style="height:45px" alt="logo"></span>
+		  </div>
+		</a>	
+		<!-- Logo
+		<a href="/user" class="logo">
+			<img src="{{ asset('images/logo netcapital.png') }}">
+		<b>NETCAPITALGLOBE</b> 
+		</a>	 -->
+	</div>  
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+	  <div class="app-menu">
+		<ul class="header-megamenu nav">
+			<li class="btn-group nav-item">
+				<a href="#" class="waves-effect waves-light nav-link push-btn btn-outline no-border btn-primary-light" data-toggle="push-menu" role="button">
+					<i data-feather="align-left"></i>
+			    </a>
+			</li>				  
+			
+			<li class="btn-group nav-item d-none d-xl-inline-block">
+				<a href="/user/deposit" class="waves-effect waves-light nav-link btn-outline no-border svg-bt-icon btn-info-light" title="Deposit">
+					<i data-feather="plus-square"></i>
+			    </a>
+			</li>
+			<li class="btn-group nav-item d-none d-xl-inline-block">
+				<a href="/user/withdrawal" class="waves-effect waves-light nav-link btn-outline no-border svg-bt-icon btn-danger-light" title="Withdrawal">
+					<i data-feather="minus-square"></i>
+			    </a>
+			</li>
+			<li class="btn-group nav-item d-none d-xl-inline-block">
+				<a href="/user/reinvest" class="waves-effect waves-light btn-outline no-border nav-link svg-bt-icon btn-success-light" title="Reinvest">
+					<i data-feather="rotate-cw"></i>
+			    </a>
+			</li>
+		</ul> 
+	  </div>
+		
+      <div class="navbar-custom-menu r-side">
+        <ul class="nav navbar-nav">		 
+			<li class="btn-group nav-item d-lg-inline-flex d-none">
+				<a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link btn-outline no-border full-screen btn-warning-light" title="Full Screen">
+					<i data-feather="maximize"></i>
+			    </a>
+			</li>
+		  
+	      <!-- User Account-->
+          <li class="dropdown user user-menu">
+            <a href="#" class="waves-effect waves-light dropdown-toggle no-border p-5" data-bs-toggle="dropdown" title="User">
+				<img class="avatar avatar-pill" src="{{ asset('images/avatar/3.png') }}" alt="">
             </a>
-        </div>
-
-        <div class="navbar-collapse">
-            <ul class="navbar-nav mr-auto mt-md-0">
-                <li class="nav-item">
-                    <a class="nav-link toggle-nav hidden-md-up text-light" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-                </li>
-                <li class="nav-item m-l-10">
-                    <a class="nav-link sidebartoggle hidden-sm-down text-light" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-                </li>
+            <ul class="dropdown-menu animated flipInX">
+              <li class="user-body">
+				 <a class="dropdown-item" href="/user/profile"><i class="ti-user text-muted me-2"></i> Profile</a>
+				 <!-- <a class="dropdown-item" href="#"><i class="ti-wallet text-muted me-2"></i> My Wallet</a> -->
+				 <a class="dropdown-item" href="/user/security"><i class="ti-settings text-muted me-2"></i> Security</a>
+				 <div class="dropdown-divider"></div>
+				 <a class="dropdown-item" href="/user/logout"><i class="ti-lock text-muted me-2"></i> Logout</a>
+              </li>
             </ul>
-
-            <ul class="navbar-nav my-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right animated slideInRight">
-                        <ul class="dropdown-user">
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"> Profile</a></li>
-                            <li><a href="#"> Balance</a></li>
-                            <li><a href="#"> Inbox</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"> Setting</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"> Logout</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
+          </li>			  
+        
+			
+        </ul>
+      </div>
     </nav>
-</div>
+  </header>
