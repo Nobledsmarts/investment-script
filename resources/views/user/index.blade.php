@@ -77,26 +77,22 @@
                                     </div>
                                     <div class="box-body">
                                         <div class="user-Wallets ">
-                                            <div class="d-flex justify-content-between">	
+                                            <!-- <div class="d-flex justify-content-between">	
                                                 <div>
                                                     <h6 class="text-primary">TOTAL : $12,215</h6>
                                                 </div>
                                                 <div>
 
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="d-flex justify-content-between">	
                                                 <div>
-                                                    <p class="mb-0 fs-18"><small>Deposits</small></p>
-
-                                                    <p class="mb-0 fs-18"><small>Withdrawals</small></p>
-                                                    <p class="mb-0 fs-18"><small>Interest</small></p>
-
+                                                    <p class="mb-0 fs-18"><small>Total Deposits</small></p>
+                                                    <p class="mb-0 fs-18"><small>Total Withdrawals</small></p>
                                                 </div>
                                                 <div>
-                                                    <p class="mb-0 fs-18"><small>{{ $total_deposits }}</small></p>
-                                                    <p class="mb-0 fs-18"><small>{{ $total_withdrawals}}</small></p>
-                                                    <p class="mb-0 fs-18"><small>$100</small></p>
+                                                    <p class="mb-0 fs-18"><small>{{ $total_approved_deposits }}</small></p>
+                                                    <p class="mb-0 fs-18"><small>{{ $total_approved_withdrawals }}</small></p>
 
                                                 </div>
                                             </div>
@@ -269,7 +265,26 @@
                                 <!-- /.box-body -->
                                 </div>
                             </div>
-                    
+                            <div class="col-12">
+                                <div class="box">
+                                    <div class="box-body">
+                                        <h4 class="box-title">
+                                            Copy Referral ID
+                                        </h4>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" id="clip-input" class="clip-input bg-light text-dark form-control text-uppercase" value="{{ $user->uid }}">
+                                            <div class="input-group-append">
+                                                <button data-clipboard-target="#clip-input" class="clipboard-btn btn btn-dark" type="submit">
+                                                    <i class="fa fa-clipboard"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                     
                         </div>
 
@@ -279,6 +294,7 @@
         </div>
   @include('user.layouts.footer')
         @include('user.layouts.general-scripts')
-       
+        <script src="{{ asset('assets/js/lib/clipboard/clipboard.min.js') }}"></script>
+        <script>new ClipboardJS('.clipboard-btn');</script>
     </body>
 </html>

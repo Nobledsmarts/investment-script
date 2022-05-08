@@ -27,10 +27,10 @@
                            
                            <div class="col-12">
                             @include('admin.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
+                            <div class="box">
+                                <div class="box-body">
                                     <div class="d-flex justify-content-between">
-                                        <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                        <h6 class="box-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                         <button class="btn btn-rounded btn-primary add-plan">Add Parent Plan</button>
                                     </div>
                                     <div class="table-responsive m-t-10">
@@ -77,7 +77,7 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="dropdown">
-                                                            <button class="btn btn-outline-dark" type="button" data-toggle="dropdown">
+                                                            <button class="btn btn-outline-light" type="button" data-bs-toggle="dropdown">
                                                                 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                                             </button>
                                                             <div class="dropdown-menu">

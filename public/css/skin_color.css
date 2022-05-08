@@ -63,7 +63,7 @@ body.dark-skin {
   .dark-skin .content-header .breadcrumb .breadcrumb-item.active {
     color: #566f9e; }
 .dark-skin .dropdown-menu {
-  background-color: #112547;
+  background-color: #fff;
   border-color: rgba(255, 255, 255, 0.12); }
   .dark-skin .dropdown-menu > li > a {
     color: #b5b5c3; }
@@ -76,8 +76,8 @@ body.dark-skin {
 .dark-skin .dropdown-divider {
   border-color: rgba(255, 255, 255, 0.12); }
 .dark-skin .dropdown-item:hover, .dark-skin .dropdown-item:focus {
-  background-color: #162f5b;
-  color: #b5b5c3; }
+  background-color: #e5eaf3;
+  color: #4c4ca9; }
 .dark-skin .content-header .page-title {
   color: #396ded.dark-skin .content-header .breadcrumb;
   border-color: #638fda; }

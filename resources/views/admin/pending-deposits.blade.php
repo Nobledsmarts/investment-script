@@ -59,12 +59,12 @@
                                                     <td>${{ $deposit['amount'] }}</td>
                                                     <td>{{ $deposit['transaction_hash'] }}</td>
                                                     <td>
-                                                        <span class="badge badge-dark text-light badge-pill px-2 py-1"> {{ $deposit['status'] }} </span>
+                                                        <span class="badge badge-light text-dark badge-pill px-2 py-1"> {{ $deposit['status'] }} </span>
                                                     </td>
                                                     <td>{{ $deposit['created_at'] }}</td>
                                                     <td class="text-center">
                                                       <div class="dropdown">
-                                                            <button class="btn btn-outline-dark" type="button" data-toggle="dropdown">
+                                                            <button class="btn btn-outline-light" type="button" data-bs-toggle="dropdown">
                                                                 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                                             </button>
                                                             <div class="dropdown-menu">

@@ -26,9 +26,9 @@
                     <div class="row">
                         <div class="col-12">
                             @include('admin.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Company's Privacy Policy</h4>
+                            <div class="box">
+                                <div class="box-body">
+                                    <h4 class="box-title">Company's Privacy Policy</h4>
                                     <form method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">

@@ -24,111 +24,113 @@
                     <!-- Main content -->
                     <section class="content">			
                         <div class="row">
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-user f-s-40 color-primary"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>{{ $total_users }}</h4>
-                                        <p class="m-b-0">Total Member</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-server f-s-40 color-success"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>${{ number_format($currently_invested, 2) }}</h4>
-                                        <p class="m-b-0">Currently Invested</p>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary bg-info-light bg-hover-info">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-user fs-40 color-primary"></i></span>
+                                        </div>
+                                        <div class="media-body text-right text-info">
+                                            <h4 class="text-info">{{ $total_users }}</h4>
+                                            <p class="m-b-0 text-info">Total Member</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-server f-s-40 color-warning"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>${{ number_format($total_deposited, 2) }}</h4>
-                                        <p class="m-b-0">Total Deposited</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-stats-up f-s-40 color-danger"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>{{ $pending_deposits }}</h4>
-                                        <p class="m-b-0">Pending Deposit</p>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary bg-warning-light bg-hover-warning">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-server fs-40 color-success"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4 class="text-warning">${{ number_format($currently_invested, 2) }}</h4>
+                                            <p class="m-b-0 text-warning">Currently Invested</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-server f-s-40 color-danger"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>${{ number_format($total_withdrawn, 2) }}</h4>
-                                        <p class="m-b-0">Total Withdrawn</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-bar-chart f-s-40 color-danger"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>{{ $pending_withdrawals }}</h4>
-                                        <p class="m-b-0">Pending Withdrawal</p>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary bg-danger bg-hover-danger">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-server fs-40 color-warning"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4 class="">${{ number_format($total_deposited, 2) }}</h4>
+                                            <p class="m-b-0 text-white">Total Deposited</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-briefcase f-s-40 color-info"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>{{ $running_investments }}</h4>
-                                        <p class="m-b-0">Running Investments</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="box p-30">
-                                <div class="media">
-                                    <div class="media-left meida media-middle">
-                                        <span><i class="ti-bar-chart f-s-40 color-success"></i></span>
-                                    </div>
-                                    <div class="media-body text-right">
-                                        <h4>{{ $total_paid }}</h4>
-                                        <p class="m-b-0">Total Paid</p>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-stats-up fs-40 color-danger"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4>{{ $pending_deposits }}</h4>
+                                            <p class="m-b-0">Pending Deposit</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary bg-info bg-hover-info">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-server fs-40 color-danger"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4>${{ number_format($total_withdrawn, 2) }}</h4>
+                                            <p class="m-b-0 text-white">Total Withdrawn</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary bg-success bg-hover-success">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-bar-chart fs-40 color-danger"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4>{{ $pending_withdrawals }}</h4>
+                                            <p class="m-b-0 text-white">Pending Withdrawal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box p-30 be-4 bb-2 border-primary bg-info bg-hover-info">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-briefcase fs-40 color-info"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4>{{ $running_investments }}</h4>
+                                            <p class="m-b-0 text-white">Running Investments</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="box p-30 be-4 bb-2 border-danger bg-warning bg-hover-warning">
+                                    <div class="media">
+                                        <div class="media-left meida media-middle">
+                                            <span><i class="ti-bar-chart fs-40 color-success"></i></span>
+                                        </div>
+                                        <div class="media-body text-right">
+                                            <h4>{{ $total_paid }}</h4>
+                                            <p class="m-b-0 text-white">Total Paid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
                         </div>
-                    </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="box">

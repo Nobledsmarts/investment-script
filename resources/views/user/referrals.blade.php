@@ -24,7 +24,25 @@
                     <!-- Main content -->
                     <section class="content">			
                         <div class="row">
-                           
+                           <div class="col-12">
+                                <div class="box">
+                                    <div class="box-body">
+                                        <h4 class="box-title">
+                                            Copy Referral ID
+                                        </h4>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" id="clip-input" class="clip-input bg-light text-dark form-control text-uppercase" value="{{ $user->uid }}">
+                                            <div class="input-group-append">
+                                                <button data-clipboard-target="#clip-input" class="clipboard-btn btn btn-dark" type="submit">
+                                                    <i class="fa fa-clipboard"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <div class="box">
                                     <div class="box-header with-border">
@@ -81,6 +99,7 @@
         </div>
   @include('user.layouts.footer')
         @include('user.layouts.general-scripts')
-       
+       <script src="{{ asset('assets/js/lib/clipboard/clipboard.min.js') }}"></script>
+        <script>new ClipboardJS('.clipboard-btn');</script>
     </body>
 </html>

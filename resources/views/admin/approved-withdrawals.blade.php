@@ -78,7 +78,7 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="dropdown">
-                                                            <button class="btn btn-outline-dark" type="button" data-toggle="dropdown">
+                                                            <button class="btn btn-outline-light" type="button" data-bs-toggle="dropdown">
                                                                 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                                             </button>
                                                             <div class="dropdown-menu">

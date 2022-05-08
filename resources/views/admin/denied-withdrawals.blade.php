@@ -71,14 +71,14 @@
                                                        ${{ number_format($withdrawal['amount'], 2) }}
                                                     </td>
                                                     <td>
-                                                        <span class="badge badge-success text-light badge-pill px-2 py-1">{{ $withdrawal['status'] }}</span>
+                                                        <span class="badge badge-danger text-light badge-pill px-2 py-1">{{ $withdrawal['status'] }}</span>
                                                     </td>
                                                     <td>
                                                        {{ $withdrawal['created_at'] }}
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="dropdown">
-                                                            <button class="btn btn-outline-dark" type="button" data-toggle="dropdown">
+                                                            <button class="btn btn-outline-light" type="button" data-bs-toggle="dropdown">
                                                                 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                                             </button>
                                                             <div class="dropdown-menu">

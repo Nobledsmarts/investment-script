@@ -54,7 +54,7 @@
 	      <!-- User Account-->
           <li class="dropdown user user-menu">
             <a href="#" class="waves-effect waves-light dropdown-toggle no-border p-5" data-bs-toggle="dropdown" title="User">
-				<img class="avatar avatar-pill" src="images/avatar/3.jpg" alt="">
+				<img class="avatar avatar-pill" src="{{ asset('images/avatar/3.png') }}" alt="">
             </a>
             <ul class="dropdown-menu animated flipInX">
               <li class="user-body">
@@ -71,4 +71,4 @@
         </ul>
       </div>
     </nav>
-  </header>ll
+  </header>

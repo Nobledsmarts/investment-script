@@ -28,8 +28,8 @@
                         <div class="col-2"></div>
                         <div class="col-12 col-md-8">
                             @include('admin.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
+                            <div class="box">
+                                <div class="box-body">
                                     <form class="form p-t-20 p-5" enctype="multipart/form-data" method="post">
                                         @csrf
                                         <div class="form-group">

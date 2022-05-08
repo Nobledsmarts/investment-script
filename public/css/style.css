@@ -33402,4 +33402,12 @@ img.away, img.busy, img.offline, img.online {
 .sweet-alert button {
   background : rgb(23 43 76) !important;
 }
+
+.dt-buttons.btn-group .btn.btn-secondary{
+  padding : 4px 8px !important;
+  font-size : 1rem !important;
+}
+.dropdown-menu button[type="submit"] {
+  width : 100% !important;
+}
 /*# sourceMappingURL=style.css.map */
