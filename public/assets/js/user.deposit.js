@@ -184,12 +184,11 @@ async function processDeposit(form){
 
 async function tocrypto(symbol) {
     try {
-        // let response = await fetch(`https://min-api.cryptocompare.com/data/price?fsym=usd&tsyms=${symbol}`, {
-        //     method: 'GET'
-        // });
-        // let result = await response.json();
-        // return result[symbol.toUpperCase()];
-        return 12;
+        let response = await fetch(`https://min-api.cryptocompare.com/data/price?fsym=usd&tsyms=${symbol}`, {
+            method: 'GET'
+        });
+        let result = await response.json();
+        return result[symbol.toUpperCase()];
     } catch {
         return false;
     }

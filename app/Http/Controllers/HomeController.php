@@ -210,8 +210,12 @@ class HomeController extends Controller {
             'user_id' => $user['id'],
             'status' => 'pending',
         ])->get();
+
+        $all_deposits = Deposit::where([
+            'user_id' => $user['id'],
+        ])->get();
         $deposits = Deposit::where('user_id', $user['id'])->get();
-        return view('user.deposits', compact('page_title', 'mode', 'user', 'denied_deposits', 'pending_deposits', 'approved_deposits'));
+        return view('user.deposits', compact('page_title', 'mode', 'user', 'all_deposits', 'denied_deposits', 'pending_deposits', 'approved_deposits'));
     }
 
     public function wallets(Request $request){

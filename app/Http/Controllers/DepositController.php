@@ -63,7 +63,7 @@ class DepositController extends Controller {
            'user_id' => $user_id,
            'child_investment_plan_id' => $plan_models->id,
            'transaction_hash' => $hash,
-        //    'wallet_id' => $validated['wallet_id'],
+           'wallet_id' => $validated['wallet_id'],
            'amount' => $validated['amount'],
            'remaining_duration' => $plan_models->duration,
            'created_at' => date('Y-m-d H:i:s'),

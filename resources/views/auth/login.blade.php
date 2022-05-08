@@ -85,7 +85,7 @@
                         </div>
                         <div class="fxt-footer">
                             <div class="fxt-transformY-50 fxt-transition-delay-9">
-                                <p>Don't have an account?<a class="" href="create-new-account.html"
+                                <p>Don't have an account?<a class="" href="/register"
                                         class="switcher-text2">Register</a>
                                 </p>
                             </div>

@@ -236,7 +236,13 @@
                                                                 
                                                             </form>
                         </div>
-
+                        <div class="fxt-footer">
+                            <div class="fxt-transformY-50 fxt-transition-delay-9">
+                                <p>Already have an account?<a class="" href="/login"
+                                        class="switcher-text2">Login</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-12"></div>
@@ -457,7 +463,7 @@
                         )
                     },
                     beforeSend: function(data, request, settings){
-                        $('#loaderIcon6').html('<img src="{{ asset(`auth/ajaxloader/ajax-loader3.gif`) }}"/>');
+                        $('#loaderIcon6').html(`<img src="{{ asset('auth/ajaxloader/ajax-loader3.gif') }}"/>`);
                     },
 
                     });

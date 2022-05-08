@@ -46,7 +46,7 @@
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        @foreach ($pending_deposits as $pending_deposit)
+                                                                        @foreach ($all_deposits as $pending_deposit)
                                                                         <tr>
                                                                             <td>
                                                                                 {{ $pending_deposit['transaction_hash'] }}
@@ -64,7 +64,7 @@
                                                                                 <span class="badge badge-pill py-1 px-2 badge-{{ $status }}"> {{ $pending_deposit['status'] }} </span>
                                                                             </td>
                                                                             <td>
-                                                                                {{ $pending_deposit->user_wallet->admin_wallet->currency }}
+                                                                                {{ $pending_deposit->wallet->currency }} 
                                                                             </td>
                                                                             <td>
                                                                                 {{ $pending_deposit['created_at'] }}
