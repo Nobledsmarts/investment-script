@@ -31,7 +31,7 @@
                                 <div class="box-body">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="box-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
-                                        <button class="btn btn-rounded btn-primary add-plan">Add Parent Plan</button>
+                                        <button class="btn btn-rounded btn-primary add-plan">Add Child Plan</button>
                                     </div>
                                     <div class="table-responsive m-t-10">
                                         <table id="record-table" class="display record-table record-export nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
