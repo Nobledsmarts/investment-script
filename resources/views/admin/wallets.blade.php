@@ -107,6 +107,44 @@
 		<!-- /.content -->
 	            </div>
         </div>
+        <div class="modal" id="wallet-modal">
+            <form class="page-form wallet-form" method="post" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group memo-wrapper">
+                    <label class="text-dark">Wallet</label>
+                    <select name="wallet_id" class="ww-100 has-memo form-control bg-light text-dark " id="has-memo">
+                        @foreach ($wallets as $wallet)
+                            <option data-id="{{ $wallet['id'] }}" data-currency="{{ $wallet['currency'] }}" data-symbol="{{ $wallet['currency_symbol'] }}" data-has_memo="{{ $wallet['has_memo'] }}" value="{{ $wallet['id'] }}">{{ $wallet['currency'] }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="text-dark">Enter Address</label>
+                    <input type="text" class="form-control bg-light text-dark" name="currency_address" placeholder="Enter Wallet Address">
+                </div>
+                <select name="has_memo" class="d-none">
+                    <option value="1">True</option>
+                    <option value="0">False</option>
+                </select>
+                <div class="memo-cont d-none">
+                    <div class="form-group">
+                        <label class="text-dark">Enter Memo Token</label>
+                        <input type="text" class="form-control bg-light text-dark" name="memo_token" placeholder="Enter Currency Memo Token">
+                    </div>
+                </div>
+                <div>
+                    <input type="hidden" name="id">
+                    <button type="submit" class="btn btn-primary rounded-btn ww-100">
+                        <span class="form-loading d-none px-5">
+                            <i class="fa fa-sync fa-spin"></i>
+                        </span>
+                        <span class='submit-text'>
+                            Submit
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
   @include('admin.layouts.footer')
         @include('admin.layouts.general-scripts')
         <script src="{{  asset('assets/js/fn.js') }}"></script>

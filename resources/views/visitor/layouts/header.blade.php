@@ -31,8 +31,8 @@
 
                         <div id="logo">
                             <a href="/">
-                                <span class="logo-default"><img src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" /></span>
-                                <span class="logo-dark"><img src="{{ asset('visitor/site-images/new/Hnet.com-image.png') }}" /></span>
+                                <span class="logo-default"><img src="{{ asset('images/Hnet.com-imag.png') }}" /></span>
+                                <span class="logo-dark"><img src="{{ asset('images/Hnet.com-imag.png') }}" /></span>
                             </a>
                         </div>
 
