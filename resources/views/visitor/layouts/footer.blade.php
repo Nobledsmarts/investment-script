@@ -11,7 +11,7 @@
                                     <li><i class="fa fa-map-marker"></i> {{ env('SITE_ADDRESS') }} </li>
                                     <!-- <li><i class="fa fa-phone"></i> <a href="tel:+For VIP Members only">+For VIP Members only</a> </li> -->
                                     <li><i class="far fa-envelope"></i> <a
-                                            href="support%40{{ env('SITE_NAME_SHORT') }}investmentfunds">support@{{ env('SITE_NAME_SHORT') }}investmentfunds.com</a> </li>
+                                            href="support&#64;{{ env('SITE_LINK') }}">support&#64;{{ env('SITE_LINK') }}</a> </li>
                                     <li>
                                         <i class="far fa-clock"></i>Monday - Friday: <strong>08:00 - 22:00</strong> <br>
                                         Saturday, Sunday: <strong>Closed</strong>
