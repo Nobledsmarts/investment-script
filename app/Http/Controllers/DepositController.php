@@ -30,7 +30,7 @@ class DepositController extends Controller {
        $plan_name_is_valid = ChildInvestmentPlan::where('id', $validated['child_plan_id'])->first();
        $wallet_id_is_valid = MainWallet::where('id', $validated['wallet_id'])->first();
 
-       if(!$wallet_id_is_valid) {
+       if(!$wallet_id_is_valid) { 
             return response()->json(
                 [
                     'errors' => ['message' => ['Wallet not supported or no selected wallet']]
@@ -63,7 +63,7 @@ class DepositController extends Controller {
            'user_id' => $user_id,
            'child_investment_plan_id' => $plan_models->id,
            'transaction_hash' => $hash,
-           'wallet_id' => $validated['wallet_id'],
+        //    'wallet_id' => $validated['wallet_id'],
            'amount' => $validated['amount'],
            'remaining_duration' => $plan_models->duration,
            'created_at' => date('Y-m-d H:i:s'),
