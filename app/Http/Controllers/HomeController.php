@@ -37,7 +37,23 @@ class HomeController extends Controller {
         SiteSettings::where('id', 1)->increment('visit_count', 1);
         $settings = SiteSettings::latest()->first();
         $reviews = Reviews::where('active', '1')->get();
-        return view('visitor.index', compact('page_title', 'deposits', 'withdrawals', 'plans', 'faqs', 'settings', 'reviews'));
+        
+        $amounts = [];
+        foreach($plans as $plan) {
+            array_push($amounts, $plan->minimum_amount);
+        }
+        $minimum_amount = intval(min($amounts));
+        $array_plans = Array ($plans);
+        $count = 0;
+        $minimum_plan = array_reduce($array_plans, function($minimum_plan, $plan) use($count, $minimum_amount) {
+            if(intval($plan[$count]->minimum_amount) == $minimum_amount) {
+                return $plan[$count];
+            } else {
+                $count++;
+            }
+        });
+        var_dump($minimum_plan->name);
+        return view('visitor.index', compact('page_title', 'minimum_plan', 'minimum_amount', 'deposits', 'withdrawals', 'plans', 'faqs', 'settings', 'reviews'));
     }
     public function dashboard(Request $request){
         $page_title = env('SITE_NAME') . " Investment Website | Dashboard";

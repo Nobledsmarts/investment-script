@@ -7,13 +7,13 @@
                     <div class="content-header">
                         <div class="d-flex align-items-center">
                             <div class="me-auto">
-                                <h4 class="page-title">Confirm Debit</h4>
+                                <h4 class="page-title">Confirm CI Debit</h4>
                                 <div class="d-inline-block align-items-center">
                                     <nav>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
                                             <li class="breadcrumb-item" aria-current="page">Admin</li>
-                                            <li class="breadcrumb-item active" aria-current="page">Confirm Debit</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Confirm CI Debit</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -33,7 +33,6 @@
                                         <table id="record-table" class="display record-table record-export nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
-                                                    <th>Type</th>
                                                     <th>Debited By</th>
                                                     <th>From User</th>
                                                     <th>Amount</th>
@@ -45,7 +44,6 @@
                                             <tbody>
                                                 @foreach($funds as $fund)
                                                 <tr class="background_white">
-                                                    <td>{{ join(' ', explode('_', $fund->type)) }}</td>
                                                     <td>
                                                         {{ $fund->user->name }}
                                                     </td>

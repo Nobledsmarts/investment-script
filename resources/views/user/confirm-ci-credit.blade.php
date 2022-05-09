@@ -7,13 +7,13 @@
                     <div class="content-header">
                         <div class="d-flex align-items-center">
                             <div class="me-auto">
-                                <h4 class="page-title">Confirm Credit</h4>
+                                <h4 class="page-title">Confirm CI Credit</h4>
                                 <div class="d-inline-block align-items-center">
                                     <nav>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
                                             <li class="breadcrumb-item" aria-current="page">Admin</li>
-                                            <li class="breadcrumb-item active" aria-current="page">Confirm Credit</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Confirm CI Credit</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -33,7 +33,6 @@
                                             <table id="record-table" class="display record-table record-export nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
-                                                        <th>Type</th>
                                                         <th>Credited By</th>
                                                         <th>To User</th>
                                                         <th>Amount</th>
@@ -45,7 +44,6 @@
                                                 <tbody>
                                                     @foreach($funds as $fund)
                                                     <tr class="background_white">
-                                                        <td>{{ join(' ', explode('_', $fund->type)) }}</td>
                                                         <td>
                                                             {{ $fund->user->name }}
                                                         </td>
@@ -56,7 +54,7 @@
                                                             ${{ $fund['amount'] }}
                                                         </td>
                                                         <td>
-                                                            <span class="badge badge-pill badge-dark py-1 py-2">pending</span>
+                                                            <span class="badge badge-pill badge-light text-dark py-1 py-2">pending</span>
                                                         </td>
                                                         <td>
                                                             {{ $fund['created_at'] }}

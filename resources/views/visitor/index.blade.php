@@ -1,5 +1,6 @@
     @include('visitor.layouts.head')
         @include('visitor.layouts.header')
+        
             <main>
                 
                 <div id="slider" class="inspiro-slider dots-creative" data-height-xs="560">
@@ -624,7 +625,7 @@
                                         <div class="uk-text-center monee-fee-wrapper">
                                             <h3 class="uk-text-uppercase uk-margin-remove-bottom">Investment</h3>
                                             <h1 class="uk-margin-remove-top"> <span class="monee-currency">$</span> <span
-                                                    class="monee-fee">200</span> </h1>
+                                                    class="monee-fee">{{ $minimum_amount }}</span> </h1>
                                             <p class="uk-margin-remove-top uk-margin-remove-bottom">Minimum investment rate</p>
                                             <span class="uk-label uk-label-warning uk-margin-remove-top">Other fees may
                                                 apply</span>
