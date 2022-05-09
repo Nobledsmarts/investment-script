@@ -52,7 +52,6 @@ class HomeController extends Controller {
                 $count++;
             }
         });
-        var_dump($minimum_plan->name);
         return view('visitor.index', compact('page_title', 'minimum_plan', 'minimum_amount', 'deposits', 'withdrawals', 'plans', 'faqs', 'settings', 'reviews'));
     }
     public function dashboard(Request $request){
