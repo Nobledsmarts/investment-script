@@ -33,7 +33,6 @@
                                             <table id="record-table" class="display record-table record-export nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
-                                                        <th>Type</th>
                                                         <th>Credited By</th>
                                                         <th>To User</th>
                                                         <th>Amount</th>
@@ -45,7 +44,6 @@
                                                 <tbody>
                                                     @foreach($funds as $fund)
                                                     <tr class="background_white">
-                                                        <td>{{ join(' ', explode('_', $fund->type)) }}</td>
                                                         <td>
                                                             {{ $fund->user->name }}
                                                         </td>

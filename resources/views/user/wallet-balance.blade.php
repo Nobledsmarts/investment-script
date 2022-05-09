@@ -2,27 +2,35 @@
         <div id="main-wrapper">
             @include('user.layouts.navigation')
             @include('user.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">Wallet Balance</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                     <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Wallet Balance</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Mod</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Wallet Balance</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Mod</a></li>
-                            <li class="breadcrumb-item active">Wallet Balance</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
+                    <!-- Main content -->
+                    <section class="content">			
+                        
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-12 col-md-8">
                             @include('user.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
-                                    <form class="form p-t-20 p-5" method="post" enctype="multipart/form-data">
+                            <div class="box">
+                                <div class="box-body">
+                                    <form class="form p-t-20 p-5" enctype="multipart/form-data" method="post">
                                         @csrf
                                         <div class="form-group">
                                             <label class="control-label">Select User</label>
@@ -36,7 +44,7 @@
                                             <label for="email">Action</label>
                                             <select class="form-control" name="action">
                                                 <option value="debit">Debit</option>
-                                                <option value="fund">Credit</option>
+                                                <option value="fund">Fund</option>
                                             </select> 
                                         </div>
                                         <div class="form-group">
@@ -47,7 +55,7 @@
                                             </div>
                                         </div>
                                         <div class="text-left">
-                                            <button type="submit" class="btn btn-dark btn-block waves-effect waves-light m-r-10">Submit</button>
+                                            <button type="submit" class="btn btn-primary ww-100 btn-block waves-effect waves-light m-r-10">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -55,13 +63,12 @@
                         </div>
                         <div class="col-2"></div>
                     </div>
-                </div>
-                @include('user.layouts.footer')
-            </div>
+
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
+  @include('user.layouts.footer')
         @include('user.layouts.general-scripts')
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
-        <script src="{{  asset('assets/js/fn.js') }}"></script>
-        <script src="{{  asset('assets/js/main.js') }}"></script>
     </body>
 </html>

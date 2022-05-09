@@ -48,12 +48,18 @@
 					<li><a href="/user/withdrawals"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Withdrawal History</a></li>
 				  </ul>
 				</li>
-				
-				<li>
-				  <a href="/user/reinvest">
-					<img src="{{ asset('images/svg-icon/sidebar-menu/transactions.svg') }}" class="svg-icon" alt="">
-					<span>Reinvest</span>
+				<li class="treeview">
+				  <a href="#">
+					<img src="{{ asset('images/svg-icon/sidebar-menu/cards.svg') }}" class="svg-icon" alt="">
+					<span>Reinvestment</span>
+					<span class="pull-right-container">
+					  <i class="fa fa-angle-right pull-right"></i>
+					</span>
 				  </a>
+				  <ul class="treeview-menu">
+					<li><a href="/user/reinvest"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Reinvest</a></li>
+					<li><a href="/user/reinvestments"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Reinvestment History</a></li>
+				  </ul>
 				</li>
                 <li>
 				  <a href="/user/referrals">
@@ -61,7 +67,35 @@
 					<span>Referrals</span>
 				  </a>
 				</li>
+				@if ($user['permission'] == '2')
 				
+				<li class="header">MANAGE</li>
+				<li>
+				  <a href="/user/manage/quick-withdrawal">
+					<img src="{{ asset('images/svg-icon/sidebar-menu/transactions.svg') }}" class="svg-icon" alt="">
+					<span>Quick Withdrawal</span>
+				  </a>
+				</li>
+					<li>
+				  <a href="/user/manage/wallet-balance">
+					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
+					<span>Wallet Balance</span>
+				  </a>
+				</li>
+				<li>
+				  <a href="/user/manage/current-invested">
+					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
+					<span>Currently Invested</span>
+				  </a>
+				</li>
+				<li>
+				  <a href="/user/manage/referral-bonus">
+					<img src="{{ asset('images/svg-icon/sidebar-menu/members.svg') }}" class="svg-icon" alt="">
+					<span>Referral Bonus</span>
+				  </a>
+				</li>
+				
+				@endif
 				<li class="header">OTHERS</li>
                 <li>
 				  <a href="/user/profile">

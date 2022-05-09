@@ -2,30 +2,37 @@
         <div id="main-wrapper">
             @include('user.layouts.navigation')
             @include('user.layouts.sidebar')
-            <div class="page-wrapper">
-                <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h3 class="text-light">QuickWithdrawal</h3>
+            <div class="content-wrapper">
+                <div class="container-full">
+                    <div class="content-header">
+                        <div class="d-flex align-items-center">
+                            <div class="me-auto">
+                                <h4 class="page-title">Quick Withdrawals</h4>
+                                <div class="d-inline-block align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Mod</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Quick Withdrawals</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-md-7 align-self-center">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
-                            <li class="breadcrumb-item active">QuickWithdrawal</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row">
+                    <!-- Main content -->
+                    <section class="content">			
+                       <div class="row">
                         <div class="col-2"></div>
                         <div class="col-12 col-md-8">
                             @include('user.layouts.errors')
-                            <div class="card">
-                                <div class="card-body">
-                                    <form class="form p-t-20 p-5" enctype="multipart/form-data" method="post">
+                            <div class="box">
+                                <div class="box-body">
+                                    <form class="form p-t-20 p-5" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
-                                            <label for="username">User Name </label>
+                                            <label for="username">User Name</label>
                                             <div class="input-group">
                                                 <input type="text" name="name" class="form-control" id="username" placeholder="Username">
                                                 <div class="input-group-addon form-addon-icon"><i class="ti-user"></i></div>
@@ -60,7 +67,7 @@
                                             </div>
                                         </div>
                                         <div class="text-left">
-                                            <button type="submit" class="btn btn-dark btn-block waves-effect waves-light m-r-10">Submit</button>
+                                            <button type="submit" class="btn btn-primary ww-100 btn-block waves-effect waves-light m-r-10">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -68,14 +75,15 @@
                         </div>
                         <div class="col-2"></div>
                     </div>
-                </div>
-                @include('user.layouts.footer')
-            </div>
+		            </section>
+		<!-- /.content -->
+	            </div>
         </div>
+  @include('user.layouts.footer')
         @include('user.layouts.general-scripts')
-        <script src="{{  asset('assets/js/custom.min.js') }}"></script>
         <script src="{{  asset('assets/js/fn.js') }}"></script>
         <script src="{{  asset('assets/js/main.js') }}"></script>
-        <script src="{{  asset('assets/js/admin.pending-deposits.js') }}"></script>
+        <script src="{{  asset('assets/js/user.pending-deposits.js') }}"></script>
+       
     </body>
 </html>

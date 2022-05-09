@@ -146,6 +146,7 @@ class DepositController extends Controller {
             $validated = $request->validate([
                 'child_plan_id' => 'required', 
                 'amount' => 'required',
+                'wallet_id' => 'required'
             ]);
             $user_id = Auth::id();
             $user = User::find($user_id);

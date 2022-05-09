@@ -58,9 +58,9 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-form-label" for="btc-limit-buy-price">Plan</label>
+                                                <label class="col-form-label" for="btc-limit-buy-price">Currency</label>
                                                 <div class="">
-                                                    <select class="form-control" name="user_wallet_id" id="select-plan">
+                                                    <select class="form-control" name="wallet_id" id="select-plan">
                                                         <option data-display="Select Currency">Select Currency</option>
                                                         @foreach ($wallets as $wallet)
                                                         <option value="{{ $wallet['id'] }}" data-symbol="{{ $wallet->currency_symbol }}">{{ $wallet->currency }}</option>

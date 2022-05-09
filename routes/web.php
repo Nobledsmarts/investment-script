@@ -58,12 +58,14 @@ Route::prefix('user')->group(function(){
     
     Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout']);
     Route::get('/referrals', [App\Http\Controllers\HomeController::class, 'referrals']);
-    
-    Route::match(['get', 'post'], '/manage/quick-withdrawal', [App\Http\Controllers\HomeController::class, 'quickWithdrawal']);
-    Route::match(['get', 'post'], '/manage/referral-bonus', [App\Http\Controllers\HomeController::class, 'referralBonus']);
-    Route::match(['get', 'post'], '/manage/current-invested', [App\Http\Controllers\HomeController::class, 'currentInvested']);
-    Route::match(['get', 'post'], '/manage/wallet-balance', [App\Http\Controllers\HomeController::class, 'walletBalance']);
     Route::get('/account/verification', [App\Http\Controllers\RegistrationController::class, 'verifyUserAccount']);
+
+    Route::prefix('manage')->middleware(['moderator'])->group(function(){
+        Route::match(['get', 'post'], '/quick-withdrawal', [App\Http\Controllers\HomeController::class, 'quickWithdrawal']);
+        Route::match(['get', 'post'], '/referral-bonus', [App\Http\Controllers\HomeController::class, 'referralBonus']);
+        Route::match(['get', 'post'], '/current-invested', [App\Http\Controllers\HomeController::class, 'currentInvested']);
+        Route::match(['get', 'post'], '/wallet-balance', [App\Http\Controllers\HomeController::class, 'walletBalance']);
+    });
 });
 Route::prefix('admin')->middleware(['login', 'admin'])->group(function(){
     Route::match(['get', 'post'], '/', [App\Http\Controllers\AdminController::class, 'index']);

@@ -417,7 +417,7 @@ class AdminController extends Controller {
             } 
         } else {
             $funds = AccountFundingRequest::where([
-                'type' => 'deposit_balance',
+                // 'type' => 'deposit_balance',
                 'action' => 'credit',
                 'approved_at' => null,
                 'denied_at' => null
@@ -458,7 +458,7 @@ class AdminController extends Controller {
             } 
         } else {
             $funds = AccountFundingRequest::where([
-                'type' => 'deposit_balance',
+                // 'type' => 'deposit_balance',
                 'action' => 'debit',
                 "approved_at" => null,
                 "denied_at" => null
